@@ -2,13 +2,14 @@
 \IEEEoverridecommandlockouts
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
-\usepackage[brazil]{babel}
+\usepackage[brazilian]{babel}
 \usepackage{cite}
 \usepackage{amsmath,amssymb,amsfonts}
 \usepackage{graphicx}
 \usepackage{textcomp}
 \usepackage{xcolor}
 \usepackage{url}
+\usepackage{balance}
 
 % Permite até duas figuras largas no topo da mesma página
 \renewcommand{\dbltopfraction}{0.9}
@@ -59,9 +60,9 @@ cobertura superior a 97\% em todos os tribunais, e relacionado ao tempo de
 tramitação, obtido da numeração única dos processos, ao tamanho da ementa, à
 carga anual do relator e a variáveis categóricas como classe, assunto e
 comarca de origem. A análise, feita em R, aplica medidas de tendência central
-e de dispersão, testes de normalidade de Shapiro-Wilk e de
-Kolmogorov-Smirnov-Lilliefors, correlações de Pearson e de Spearman e o $V$ de
-Cramér. Cerca de um terço dos julgamentos de mérito dá êxito a quem recorre ou
+e de dispersão, testes de normalidade (Shapiro-Wilk,
+Kolmogorov-Smirnov-Lilliefors e qui-quadrado de aderência), correlações de
+Pearson e de Spearman e o $V$ de Cramér. Cerca de um terço dos julgamentos de mérito dá êxito a quem recorre ou
 impetra, com pouca diferença entre tribunais e grande diferença entre classes
 e entre câmaras. Nenhuma variável quantitativa é normal por decisão nem se
 correlaciona de forma relevante com o resultado, e a associação entre carga do
@@ -180,10 +181,21 @@ julgamentos de mérito e por comarca com ao menos 30 processos.
 
 A descritiva reúne medidas de tendência central (média, mediana e moda), de
 dispersão (desvio padrão, amplitude, intervalo interquartil e coeficiente de
-variação) e de forma (assimetria e curtose). A normalidade foi avaliada pelo
-teste de Shapiro-Wilk~\cite{shapiro} em grupos com até 2.000 observações e pelo
-de Kolmogorov-Smirnov com correção de Lilliefors~\cite{lilliefors} acima disso,
-na escala original e em $\log(1+x)$, com gráficos Q-Q. O coeficiente de
+variação) e de forma (assimetria e curtose). A normalidade foi avaliada
+conforme a natureza de cada variável. O tamanho da ementa é uma contagem cuja
+unidade (uma palavra) é muito menor que o desvio padrão (238 palavras) e foi
+tratado como contínuo: teste de Shapiro-Wilk~\cite{shapiro} em grupos com até
+2.000 observações e de Kolmogorov-Smirnov com correção de
+Lilliefors~\cite{lilliefors} acima disso. O tempo de tramitação, ao contrário, é
+discreto, com poucos valores inteiros e muitos empates, situação em que a
+distribuição de referência do teste de Kolmogorov-Smirnov deixa de valer. Para
+ele usou-se o qui-quadrado de aderência de Pearson~\cite{pearson1900} a uma
+normal discretizada: a probabilidade de cada valor inteiro $k$ é a da normal
+ajustada entre $k-0{,}5$ e $k+0{,}5$, e classes com frequência esperada menor
+que 5 são agrupadas; o $w$ de Cohen, $w=\sqrt{\chi^2/n}$, mede o tamanho do
+desvio~\cite{cohen}. A carga, que repete o mesmo valor em todas as decisões de
+um relator, foi testada por relator. Os testes foram feitos na escala original
+e em $\log(1+x)$ e complementados por gráficos Q-Q. O coeficiente de
 correlação seguiu o resultado desse teste: Pearson ($r$)~\cite{pearson} quando
 a normalidade não é rejeitada e Spearman ($\rho$)~\cite{spearman} nos demais
 casos; as tabelas trazem os dois para comparação. A associação com variáveis
@@ -358,18 +370,19 @@ menos 30 processos; o tamanho do ponto é proporcional ao número de processos).
 
 \subsection{Normalidade}
 
-Por decisão ou por processo, os testes de Kolmogorov-Smirnov-Lilliefors
-rejeitaram a normalidade de todas as variáveis, em todos os tribunais e nas
-duas escalas ($p < 0{,}001$; Tabela~\ref{tab:normalidade}). As estatísticas $D$
-e os gráficos Q-Q (Fig.~\ref{fig:qq}) mostram o porquê: o tempo é inteiro, com
-poucos valores e excesso de zeros, e o logaritmo reduz $D$ (de 0,208 para 0,132)
-sem eliminar os degraus; a ementa é bimodal onde os dois modelos convivem, e o
-logaritmo piora o ajuste (de 0,077 para 0,149); a carga mistura tribunais com
-coberturas distintas. Nas variáveis agregadas, com 36 a 198 observações por
-grupo, o teste de Shapiro-Wilk não rejeitou a normalidade da taxa de êxito por
-relator no TJSP ($W = 0{,}990$, $p = 0{,}18$), no TJES ($p = 0{,}057$) e no TJPA
-($p = 0{,}30$), nem a da proporção de processos longos por comarca no TJES e no
-TJBA.
+A normalidade foi rejeitada em todas as variáveis, por processo e por decisão,
+em todos os tribunais e nas duas escalas ($p < 0{,}001$;
+Tabela~\ref{tab:normalidade}). No tempo de tramitação, o desvio é grande na
+escala original ($w$ de 0,72 no TJPA a 1,40 no TJSP) e cai para pequeno a médio
+em $\log(1+x)$ ($w$ de 0,17 a 0,32): o logaritmo aproxima a cauda da normal, mas
+não elimina o excesso de zeros nem os degraus dos anos inteiros, visíveis no
+gráfico Q-Q (Fig.~\ref{fig:qq}). No tamanho da ementa, bimodal onde os dois
+modelos convivem, o logaritmo piora o ajuste ($D$ de 0,077 para 0,149 no
+conjunto). Por relator, com 36 a 198 observações por tribunal, o teste de
+Shapiro-Wilk não rejeitou a normalidade da taxa de êxito no TJSP
+($W = 0{,}990$, $p = 0{,}18$), no TJES ($p = 0{,}057$) e no TJPA ($p = 0{,}30$);
+a carga por relator não é normal em nenhum tribunal. Por comarca, a proporção
+de processos longos é aproximadamente normal no TJES e no TJBA.
 
 \begin{table}[!t]
 \caption{Estatísticas dos testes de normalidade}
@@ -381,13 +394,12 @@ TJBA.
 \hline
 \textbf{Variável} & \textbf{Escala} & \textbf{Total} & \textbf{TJSP} & \textbf{TJES} & \textbf{TJPA} & \textbf{TJBA} \\
 \hline
-\multicolumn{7}{l}{\textit{$D$ de Kolmogorov-Smirnov-Lilliefors ($p < 0{,}001$ em todos)}} \\
-Tramitação & original & 0,208 & 0,282 & 0,196 & 0,169 & 0,210 \\
-           & log      & 0,132 & 0,188 & 0,132 & 0,092 & 0,134 \\
+\multicolumn{7}{l}{\textit{Tramitação, por processo: $w$ do qui-quadrado de aderência}} \\
+Tramitação & original & 1,357 & 1,398 & 0,884 & 0,722 & 1,218 \\
+           & log      & 0,179 & 0,324 & 0,172 & 0,181 & 0,208 \\
+\multicolumn{7}{l}{\textit{Ementa, por decisão: $D$ de Kolmogorov-Smirnov-Lilliefors}} \\
 Ementa     & original & 0,077 & 0,146 & 0,044 & 0,025 & 0,116 \\
            & log      & 0,149 & 0,030 & 0,136 & 0,100 & 0,141 \\
-Carga      & original & 0,098 & 0,169 & 0,250 & 0,141 & 0,138 \\
-           & log      & 0,258 & 0,061 & 0,328 & 0,206 & 0,217 \\
 \hline
 \multicolumn{7}{l}{\textit{$W$ de Shapiro-Wilk por relator ($n$ = 355, 198, 40, 36 e 81)}} \\
 Taxa de êxito      & & 0,988\textsuperscript{*} & 0,990 & 0,946 & 0,965 & 0,964\textsuperscript{*} \\
@@ -397,14 +409,16 @@ Ementa (mediana)   & & 0,838\textsuperscript{*} & 0,605\textsuperscript{*} & 0,9
 \multicolumn{7}{l}{\textit{$W$ de Shapiro-Wilk por comarca ($n$ = 422, 102, 65, 109 e 146)}} \\
 \% tramitação longa & & 0,980\textsuperscript{*} & 0,904\textsuperscript{*} & 0,989 & 0,974\textsuperscript{*} & 0,990 \\
 \hline
-\multicolumn{7}{l}{\footnotesize \textsuperscript{*}normalidade rejeitada ($p < 0{,}05$). Sem asterisco: não rejeitada.}
+\multicolumn{7}{l}{\footnotesize Tramitação e ementa: $p < 0{,}001$ em todos os testes.}\\
+\multicolumn{7}{l}{\footnotesize \textsuperscript{*}normalidade rejeitada ($p < 0{,}05$); sem asterisco: não rejeitada.}
 \end{tabular}
 \end{table}
 
 \begin{figure*}[t]
-\centerline{\figura{0.55\textwidth}{figs/fig6_qq.png}}
-\caption{Gráficos Q-Q das três variáveis (tramitação por processo; ementa e
-carga por decisão), na escala original e em $\log(1+x)$.}
+\centerline{\figura{0.82\textwidth}{figs/fig6_qq.png}}
+\caption{Gráficos Q-Q do tempo de tramitação (por processo), do tamanho da
+ementa (por decisão) e da carga (por relator), na escala original e em
+$\log(1+x)$.}
 \label{fig:qq}
 \end{figure*}
 
@@ -528,13 +542,14 @@ identificada só por um código, e o assunto não existe no TJBA.
 compartilham processo e data com outra decisão, tipicamente o acórdão principal
 e o dos embargos de declaração; como esses julgamentos não ocorrem no mesmo dia,
 a data registrada parece ser a do último ato do processo, o que pode deslocar
-alguns julgamentos para 2025. Contar o tempo por processo reduz esse efeito. O
-teste de Kolmogorov-Smirnov pressupõe dados contínuos, e o tempo tem muitos
-empates; com dezenas de milhares de observações, a interpretação se apoiou na
-magnitude. As associações por relator e por comarca refletem a composição da
+alguns julgamentos para 2025. Contar o tempo por processo reduz esse efeito. Com
+dezenas de milhares de observações, qualquer teste rejeita desvios pequenos;
+por isso a interpretação se apoiou no tamanho do efeito ($D$, $w$, $\rho$ e
+$V$) e nos gráficos. As associações por relator e por comarca refletem a composição da
 pauta e não foram ajustadas para ela, e nenhuma delas indica causalidade.
 
 \section{Conclusão}\label{sec:conclusao}
+\balance
 
 A análise de 186.644 acórdãos de quatro tribunais de justiça julgados em 2025
 produziu quatro resultados. Primeiro, cerca de um terço dos julgamentos de
@@ -563,6 +578,7 @@ R, no mesmo repositório.
 \bibitem{cnj65} Conselho Nacional de Justiça, ``Resolução nº 65, de 16 de dezembro de 2008: dispõe sobre a uniformização do número dos processos nos órgãos do Poder Judiciário,'' \textit{DJe/CNJ}, 2008.
 \bibitem{cnj154} Conselho Nacional de Justiça, ``Recomendação nº 154, de 13 de agosto de 2024: recomenda a todos os tribunais do país a adoção de modelo padronizado de elaboração de ementas,'' \textit{DJe/CNJ}, n. 187, 15 ago. 2024.
 \bibitem{tjsp2024} Tribunal de Justiça do Estado de São Paulo, notícia institucional sobre a produtividade de 2024, 23 jan. 2025. [Online]. Disponível: https://www.tjsp.jus.br/\allowbreak Noticias/\allowbreak Noticia?codigoNoticia=105913
+\bibitem{pearson1900} K. Pearson, ``On the criterion that a given system of deviations from the probable in the case of a correlated system of variables is such that it can be reasonably supposed to have arisen from random sampling,'' \textit{Philos. Mag.}, ser. 5, vol. 50, no. 302, pp. 157--175, 1900.
 \bibitem{shapiro} S. S. Shapiro and M. B. Wilk, ``An analysis of variance test for normality (complete samples),'' \textit{Biometrika}, vol. 52, no. 3/4, pp. 591--611, 1965.
 \bibitem{lilliefors} H. W. Lilliefors, ``On the Kolmogorov-Smirnov test for normality with mean and variance unknown,'' \textit{J. Amer. Statist. Assoc.}, vol. 62, no. 318, pp. 399--402, 1967.
 \bibitem{pearson} K. Pearson, ``Notes on regression and inheritance in the case of two parents,'' \textit{Proc. Roy. Soc. London}, vol. 58, pp. 240--242, 1895.

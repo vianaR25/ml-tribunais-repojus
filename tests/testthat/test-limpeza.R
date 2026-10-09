@@ -2,7 +2,7 @@
 # Rodar na pasta do projeto:  Rscript -e 'testthat::test_dir("tests/testthat")'
 
 raiz <- normalizePath(file.path(testthat::test_path(), "..", ".."))
-for (f in c("config", "limpeza", "variaveis"))
+for (f in c("config", "limpeza", "variaveis", "estatistica"))
   source(file.path(raiz, "R", paste0(f, ".R")), encoding = "UTF-8")
 
 test_that("TJSP: fica só o texto após a última 'Ementa:'", {
@@ -83,4 +83,14 @@ test_that("cópias exatas são removidas", {
                   processo = c("1", "1", "2"), data_julgamento = as.Date("2025-05-01"),
                   ementa = c("Texto  igual.", "Texto igual.", "Texto igual."))
   expect_equal(nrow(remover_copias(b)), 2)
+})
+
+test_that("qui-quadrado de aderência para dados discretos", {
+  set.seed(1)
+  quase_normal <- round(rnorm(5000, 50, 10))       # normal arredondada: não deve rejeitar
+  assimetrica <- rpois(5000, 1)                     # muitos zeros, assimétrica: deve rejeitar
+  expect_gt(aderencia_discreta(quase_normal, 0.05)$p, 0.01)
+  r <- aderencia_discreta(assimetrica, 0.05)
+  expect_lt(r$p, 0.001)
+  expect_gt(r$w, 0.1)
 })

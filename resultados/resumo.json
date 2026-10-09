@@ -1524,21 +1524,13 @@
       "grupo": "Total",
       "variavel": "tempo_tramitacao",
       "escala": "original",
-      "teste": "KS-Lilliefors",
+      "teste": "Qui-quadrado de aderência",
       "n": 153168,
-      "estatistica": 0.207662,
+      "estatistica": 281962.537824,
       "p": 0,
-      "normal": "não"
-    },
-    {
-      "grupo": "Total",
-      "variavel": "tempo_tramitacao",
-      "escala": "log(1+x)",
-      "teste": "KS-Lilliefors",
-      "n": 153168,
-      "estatistica": 0.131634,
-      "p": 0,
-      "normal": "não"
+      "normal": "não",
+      "gl": 20,
+      "w": 1.356787
     },
     {
       "grupo": "Total",
@@ -1548,7 +1540,21 @@
       "n": 185167,
       "estatistica": 0.07738,
       "p": 0,
-      "normal": "não"
+      "normal": "não",
+      "gl": null,
+      "w": null
+    },
+    {
+      "grupo": "Total",
+      "variavel": "tempo_tramitacao",
+      "escala": "log(1+x)",
+      "teste": "Qui-quadrado de aderência",
+      "n": 153168,
+      "estatistica": 4920.320176,
+      "p": 0,
+      "normal": "não",
+      "gl": 43,
+      "w": 0.179231
     },
     {
       "grupo": "Total",
@@ -1558,47 +1564,21 @@
       "n": 185167,
       "estatistica": 0.149447,
       "p": 0,
-      "normal": "não"
-    },
-    {
-      "grupo": "Total",
-      "variavel": "carga_relator",
-      "escala": "original",
-      "teste": "KS-Lilliefors",
-      "n": 186644,
-      "estatistica": 0.097901,
-      "p": 0,
-      "normal": "não"
-    },
-    {
-      "grupo": "Total",
-      "variavel": "carga_relator",
-      "escala": "log(1+x)",
-      "teste": "KS-Lilliefors",
-      "n": 186644,
-      "estatistica": 0.258081,
-      "p": 0,
-      "normal": "não"
+      "normal": "não",
+      "gl": null,
+      "w": null
     },
     {
       "grupo": "TJSP",
       "variavel": "tempo_tramitacao",
       "escala": "original",
-      "teste": "KS-Lilliefors",
+      "teste": "Qui-quadrado de aderência",
       "n": 21582,
-      "estatistica": 0.28232,
+      "estatistica": 42156.962372,
       "p": 0,
-      "normal": "não"
-    },
-    {
-      "grupo": "TJSP",
-      "variavel": "tempo_tramitacao",
-      "escala": "log(1+x)",
-      "teste": "KS-Lilliefors",
-      "n": 21582,
-      "estatistica": 0.188435,
-      "p": 0,
-      "normal": "não"
+      "normal": "não",
+      "gl": 12,
+      "w": 1.397619
     },
     {
       "grupo": "TJSP",
@@ -1608,7 +1588,21 @@
       "n": 21826,
       "estatistica": 0.146462,
       "p": 0,
-      "normal": "não"
+      "normal": "não",
+      "gl": null,
+      "w": null
+    },
+    {
+      "grupo": "TJSP",
+      "variavel": "tempo_tramitacao",
+      "escala": "log(1+x)",
+      "teste": "Qui-quadrado de aderência",
+      "n": 21582,
+      "estatistica": 2263.082462,
+      "p": 0,
+      "normal": "não",
+      "gl": 21,
+      "w": 0.323821
     },
     {
       "grupo": "TJSP",
@@ -1618,47 +1612,21 @@
       "n": 21826,
       "estatistica": 0.030207,
       "p": 3.985578e-51,
-      "normal": "não"
-    },
-    {
-      "grupo": "TJSP",
-      "variavel": "carga_relator",
-      "escala": "original",
-      "teste": "KS-Lilliefors",
-      "n": 21826,
-      "estatistica": 0.169241,
-      "p": 0,
-      "normal": "não"
-    },
-    {
-      "grupo": "TJSP",
-      "variavel": "carga_relator",
-      "escala": "log(1+x)",
-      "teste": "KS-Lilliefors",
-      "n": 21826,
-      "estatistica": 0.061164,
-      "p": 6.346962e-219,
-      "normal": "não"
+      "normal": "não",
+      "gl": null,
+      "w": null
     },
     {
       "grupo": "TJES",
       "variavel": "tempo_tramitacao",
       "escala": "original",
-      "teste": "KS-Lilliefors",
+      "teste": "Qui-quadrado de aderência",
       "n": 34933,
-      "estatistica": 0.196344,
+      "estatistica": 27274.851142,
       "p": 0,
-      "normal": "não"
-    },
-    {
-      "grupo": "TJES",
-      "variavel": "tempo_tramitacao",
-      "escala": "log(1+x)",
-      "teste": "KS-Lilliefors",
-      "n": 34933,
-      "estatistica": 0.131527,
-      "p": 0,
-      "normal": "não"
+      "normal": "não",
+      "gl": 16,
+      "w": 0.883615
     },
     {
       "grupo": "TJES",
@@ -1668,7 +1636,21 @@
       "n": 37537,
       "estatistica": 0.043544,
       "p": 4.022674e-188,
-      "normal": "não"
+      "normal": "não",
+      "gl": null,
+      "w": null
+    },
+    {
+      "grupo": "TJES",
+      "variavel": "tempo_tramitacao",
+      "escala": "log(1+x)",
+      "teste": "Qui-quadrado de aderência",
+      "n": 34933,
+      "estatistica": 1027.536276,
+      "p": 2.698876e-195,
+      "normal": "não",
+      "gl": 32,
+      "w": 0.171507
     },
     {
       "grupo": "TJES",
@@ -1678,47 +1660,21 @@
       "n": 37537,
       "estatistica": 0.135575,
       "p": 0,
-      "normal": "não"
-    },
-    {
-      "grupo": "TJES",
-      "variavel": "carga_relator",
-      "escala": "original",
-      "teste": "KS-Lilliefors",
-      "n": 37560,
-      "estatistica": 0.249731,
-      "p": 0,
-      "normal": "não"
-    },
-    {
-      "grupo": "TJES",
-      "variavel": "carga_relator",
-      "escala": "log(1+x)",
-      "teste": "KS-Lilliefors",
-      "n": 37560,
-      "estatistica": 0.328386,
-      "p": 0,
-      "normal": "não"
+      "normal": "não",
+      "gl": null,
+      "w": null
     },
     {
       "grupo": "TJPA",
       "variavel": "tempo_tramitacao",
       "escala": "original",
-      "teste": "KS-Lilliefors",
+      "teste": "Qui-quadrado de aderência",
       "n": 31809,
-      "estatistica": 0.168621,
+      "estatistica": 16583.353311,
       "p": 0,
-      "normal": "não"
-    },
-    {
-      "grupo": "TJPA",
-      "variavel": "tempo_tramitacao",
-      "escala": "log(1+x)",
-      "teste": "KS-Lilliefors",
-      "n": 31809,
-      "estatistica": 0.092252,
-      "p": 0,
-      "normal": "não"
+      "normal": "não",
+      "gl": 19,
+      "w": 0.72204
     },
     {
       "grupo": "TJPA",
@@ -1728,7 +1684,21 @@
       "n": 34254,
       "estatistica": 0.024546,
       "p": 1.46508e-52,
-      "normal": "não"
+      "normal": "não",
+      "gl": null,
+      "w": null
+    },
+    {
+      "grupo": "TJPA",
+      "variavel": "tempo_tramitacao",
+      "escala": "log(1+x)",
+      "teste": "Qui-quadrado de aderência",
+      "n": 31809,
+      "estatistica": 1044.306766,
+      "p": 6.321227e-193,
+      "normal": "não",
+      "gl": 40,
+      "w": 0.181192
     },
     {
       "grupo": "TJPA",
@@ -1738,47 +1708,21 @@
       "n": 34254,
       "estatistica": 0.099671,
       "p": 0,
-      "normal": "não"
-    },
-    {
-      "grupo": "TJPA",
-      "variavel": "carga_relator",
-      "escala": "original",
-      "teste": "KS-Lilliefors",
-      "n": 34254,
-      "estatistica": 0.140931,
-      "p": 0,
-      "normal": "não"
-    },
-    {
-      "grupo": "TJPA",
-      "variavel": "carga_relator",
-      "escala": "log(1+x)",
-      "teste": "KS-Lilliefors",
-      "n": 34254,
-      "estatistica": 0.20601,
-      "p": 0,
-      "normal": "não"
+      "normal": "não",
+      "gl": null,
+      "w": null
     },
     {
       "grupo": "TJBA",
       "variavel": "tempo_tramitacao",
       "escala": "original",
-      "teste": "KS-Lilliefors",
+      "teste": "Qui-quadrado de aderência",
       "n": 64844,
-      "estatistica": 0.209577,
+      "estatistica": 96186.218083,
       "p": 0,
-      "normal": "não"
-    },
-    {
-      "grupo": "TJBA",
-      "variavel": "tempo_tramitacao",
-      "escala": "log(1+x)",
-      "teste": "KS-Lilliefors",
-      "n": 64844,
-      "estatistica": 0.134403,
-      "p": 0,
-      "normal": "não"
+      "normal": "não",
+      "gl": 21,
+      "w": 1.217928
     },
     {
       "grupo": "TJBA",
@@ -1788,7 +1732,21 @@
       "n": 91550,
       "estatistica": 0.115731,
       "p": 0,
-      "normal": "não"
+      "normal": "não",
+      "gl": null,
+      "w": null
+    },
+    {
+      "grupo": "TJBA",
+      "variavel": "tempo_tramitacao",
+      "escala": "log(1+x)",
+      "teste": "Qui-quadrado de aderência",
+      "n": 64844,
+      "estatistica": 2805.495145,
+      "p": 0,
+      "normal": "não",
+      "gl": 42,
+      "w": 0.208003
     },
     {
       "grupo": "TJBA",
@@ -1798,27 +1756,9 @@
       "n": 91550,
       "estatistica": 0.14137,
       "p": 0,
-      "normal": "não"
-    },
-    {
-      "grupo": "TJBA",
-      "variavel": "carga_relator",
-      "escala": "original",
-      "teste": "KS-Lilliefors",
-      "n": 93004,
-      "estatistica": 0.137857,
-      "p": 0,
-      "normal": "não"
-    },
-    {
-      "grupo": "TJBA",
-      "variavel": "carga_relator",
-      "escala": "log(1+x)",
-      "teste": "KS-Lilliefors",
-      "n": 93004,
-      "estatistica": 0.217363,
-      "p": 0,
-      "normal": "não"
+      "normal": "não",
+      "gl": null,
+      "w": null
     }
   ],
   "correlacao_decisao": [

@@ -174,7 +174,7 @@ executar <- function(cfg = CONFIG, forcar = FALSE) {
   fig_tempo_tribunal(p, figs)
   fig_ementa_tribunal(a, figs)
   fig_relator_carga_exito(rel, figs)
-  fig_qq(a, p, figs, cfg$semente)
+  fig_qq(a, p, rel, figs, cfg$semente)
   fig_spearman(a, figs)
   fig_cnj_tribunal(a, figs)
   fig_exito_orgao(org, figs)

@@ -56,17 +56,56 @@ testar <- function(x, alfa) {
              normal = ifelse(r$p.value < alfa, "não", "sim"))
 }
 
+# Qui-quadrado de aderência à normal para uma variável discreta (inteira).
+# Sob H0, a variável na escala escolhida é normal e o valor inteiro observado é o
+# arredondamento dela: a probabilidade de cada inteiro k é a da normal entre
+# k - 0,5 e k + 0,5 (correção de continuidade). Classes com frequência esperada
+# menor que 5 são agrupadas com a vizinha. O w de Cohen, raiz de qui-quadrado/n,
+# mede o tamanho do desvio (0,1 pequeno; 0,3 médio; 0,5 grande).
+aderencia_discreta <- function(x, alfa, log_escala = FALSE, min_esperado = 5) {
+  x <- x[!is.na(x)]
+  n <- length(x)
+  g <- if (log_escala) log1p else identity
+  y <- g(x)
+  k <- seq(min(x), max(x))
+  obs <- tabulate(x - min(x) + 1L, nbins = length(k))
+  lim <- g(c(k - 0.5, max(k) + 0.5))
+  lim[1] <- -Inf
+  lim[length(lim)] <- Inf
+  esp <- n * diff(stats::pnorm(lim, mean(y), stats::sd(y)))
+  while (length(esp) > 1 && any(esp < min_esperado)) {
+    i <- which(esp < min_esperado)[1]
+    j <- if (i < length(esp)) i + 1 else i - 1
+    esp[j] <- esp[j] + esp[i]; obs[j] <- obs[j] + obs[i]
+    esp <- esp[-i]; obs <- obs[-i]
+  }
+  chi2 <- sum((obs - esp)^2 / esp)
+  gl <- length(obs) - 3            # classes - 1 - 2 parâmetros estimados
+  p <- stats::pchisq(chi2, gl, lower.tail = FALSE)
+  data.frame(teste = "Qui-quadrado de aderência", n = n, estatistica = chi2, p = p,
+             normal = ifelse(p < alfa, "não", "sim"), gl = gl, w = sqrt(chi2 / n))
+}
+
+# Normalidade das variáveis por decisão/processo:
+# - tempo de tramitação (por processo): discreto, em anos inteiros, com poucos
+#   valores -> qui-quadrado de aderência à normal discretizada;
+# - tamanho da ementa (por decisão): contagem com unidade (1 palavra) muito menor
+#   que o desvio padrão -> aproximação contínua, Shapiro-Wilk/KS-Lilliefors;
+# - carga do relator: é atributo do relator, repetido em todas as suas decisões ->
+#   testada por relator em normalidade_agregada().
 normalidade <- function(a, p, alfa) {
   linhas <- list()
   for (g in c("Total", ORDEM_TRIBUNAIS)) {
     dp <- if (g == "Total") p else p[p$tribunal == g, ]
     da <- if (g == "Total") a else a[a$tribunal == g, ]
-    for (v in VARS) {
-      x <- if (v == "tempo_tramitacao") dp[[v]] else da[[v]]
-      for (escala in c("original", "log(1+x)")) {
-        y <- if (escala == "original") x else log1p(x)
-        linhas[[length(linhas) + 1]] <- cbind(data.frame(grupo = g, variavel = v, escala = escala), testar(y, alfa))
-      }
+    for (escala in c("original", "log(1+x)")) {
+      lg <- escala != "original"
+      t1 <- aderencia_discreta(dp$tempo_tramitacao, alfa, log_escala = lg)
+      x <- da$n_palavras_ementa
+      t2 <- testar(if (lg) log1p(x) else x, alfa)
+      t2$gl <- NA; t2$w <- NA
+      linhas[[length(linhas) + 1]] <- cbind(data.frame(grupo = g, variavel = "tempo_tramitacao", escala = escala), t1)
+      linhas[[length(linhas) + 1]] <- cbind(data.frame(grupo = g, variavel = "n_palavras_ementa", escala = escala), t2)
     }
   }
   do.call(rbind, linhas)

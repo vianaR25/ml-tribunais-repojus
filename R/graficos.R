@@ -98,24 +98,26 @@ fig_relator_carga_exito <- function(r, pasta) {
   salvar(g, pasta, "fig5_relator_carga_exito", largura = COL * 2, altura = 2.1)
 }
 
-fig_qq <- function(a, p, pasta, semente) {
+fig_qq <- function(a, p, rel, pasta, semente) {
   set.seed(semente)
   amostra <- function(x, k = 3000) { x <- x[!is.na(x)]; if (length(x) > k) sample(x, k) else x }
-  fontes <- list(tempo_tramitacao = p$tempo_tramitacao, n_palavras_ementa = a$n_palavras_ementa,
-                 carga_relator = a$carga_relator)
+  fontes <- list("Tramitação (por processo)" = p$tempo_tramitacao,
+                 "Ementa (por decisão)" = a$n_palavras_ementa,
+                 "Carga (por relator)" = rel$n_decisoes)
   d <- do.call(rbind, lapply(names(fontes), function(v) {
     x <- amostra(fontes[[v]])
-    rbind(data.frame(variavel = CURTO[[v]], escala = "original", valor = x),
-          data.frame(variavel = CURTO[[v]], escala = "log(1+x)", valor = log1p(x)))
+    rbind(data.frame(painel = paste(v, "· original"), valor = x),
+          data.frame(painel = paste(v, "· log(1+x)"), valor = log1p(x)))
   }))
-  d$variavel <- factor(d$variavel, levels = CURTO[VARS])
-  d$escala <- factor(d$escala, levels = c("original", "log(1+x)"))
+  d$painel <- factor(d$painel, levels = c(paste(names(fontes), "· original"),
+                                          paste(names(fontes), "· log(1+x)")))
   g <- ggplot(d, aes(sample = valor)) +
-    stat_qq(size = 0.3, colour = "#1f4e9c") + stat_qq_line(colour = "red", linewidth = 0.4) +
-    facet_wrap(escala ~ variavel, scales = "free", nrow = 2,
-               labeller = labeller(.multi_line = FALSE)) +
-    labs(x = "Quantis teóricos", y = "Quantis observados") + tema
-  salvar(g, pasta, "fig6_qq", largura = COL * 2, altura = 3.2)
+    stat_qq(size = 0.5, colour = "#1f4e9c") + stat_qq_line(colour = "red", linewidth = 0.5) +
+    facet_wrap(~painel, nrow = 2, scales = "free") +
+    labs(x = "Quantis teóricos da normal", y = "Quantis observados") +
+    theme_bw(base_size = 10) +
+    theme(panel.grid.minor = element_blank(), strip.background = element_rect(fill = "grey95"))
+  salvar(g, pasta, "fig6_qq", largura = 7, altura = 3.6)
 }
 
 fig_spearman <- function(a, pasta) {

@@ -7,8 +7,8 @@ Análise descritiva, em **R**, de todos os acórdãos julgados em 2025 pelos tri
 São Paulo (TJSP), Espírito Santo (TJES), Pará (TJPA) e Bahia (TJBA), extraídos do corpus público
 [RepoJus](https://huggingface.co/datasets/andrebadini/repojus) (commit `5791ee7`).
 
-O trabalho (AP1) aplica estatística descritiva, gráficos, testes de normalidade (Shapiro-Wilk e
-Kolmogorov-Smirnov com correção de Lilliefors), correlações de Pearson e Spearman e associação entre
+O trabalho (AP1) aplica estatística descritiva, gráficos, testes de normalidade (Shapiro-Wilk,
+Kolmogorov-Smirnov com correção de Lilliefors e qui-quadrado de aderência), correlações de Pearson e Spearman e associação entre
 variáveis categóricas (qui-quadrado e V de Cramér). A conclusão orienta a próxima etapa (AP2): um
 modelo de classificação que prevê se um recurso vindo do primeiro grau chega ao tribunal com
 **cinco anos ou mais** de tramitação.
@@ -54,8 +54,11 @@ seguido de `executar()`.
   concedidas em *habeas corpus* ou mandado de segurança contam como êxito.
 - **Tempo de tramitação:** ano do julgamento menos o ano de ajuizamento registrado no número único
   do processo (Resolução CNJ 65/2008), contado uma vez por processo.
-- **Normalidade e correlação:** Shapiro-Wilk até 2.000 observações e Kolmogorov-Smirnov-Lilliefors
-  acima; Pearson quando a normalidade não é rejeitada, Spearman nos demais casos.
+- **Normalidade:** variáveis aproximadamente contínuas (tamanho da ementa) com Shapiro-Wilk até 2.000
+  observações e Kolmogorov-Smirnov-Lilliefors acima; o tempo de tramitação, discreto (anos inteiros),
+  com qui-quadrado de aderência a uma normal discretizada e w de Cohen; a carga, que é atributo do
+  relator, testada por relator.
+- **Correlação:** Pearson quando a normalidade não é rejeitada, Spearman nos demais casos.
 
 ## Dados
 
