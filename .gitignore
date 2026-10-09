@@ -1,0 +1,22 @@
+# Cache dos dados lidos do RepoJus (centenas de MB; regenerável com Rscript analise.R)
+dados/*
+!dados/.gitkeep
+
+# R
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj
+
+# LaTeX
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.fls
+paper/*.fdb_latexmk
+paper/*.synctex.gz
+paper/*.bbl
+paper/*.blg
+
+# Sistema
+.DS_Store

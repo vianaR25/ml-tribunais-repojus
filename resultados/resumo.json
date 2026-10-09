@@ -1,0 +1,3854 @@
+{
+  "recorte": {
+    "tribunais": ["TJSP", "TJES", "TJPA", "TJBA"],
+    "ano": 2025,
+    "commit": "5791ee745a5f63a9280bcf7e94e0242eaae88911",
+    "semente": 42,
+    "min_relator": 30,
+    "min_categoria": 30,
+    "anos_longa": 5,
+    "n_lidas": 207906,
+    "n_lidas_por_tribunal": {
+      "TJSP": 21828,
+      "TJES": 58748,
+      "TJPA": 34255,
+      "TJBA": 93075
+    },
+    "n_copias_removidas": 76,
+    "n_excluidas": 21186,
+    "n_excluidas_por_tribunal": {
+      "TJSP": 0,
+      "TJES": 21182,
+      "TJPA": 1,
+      "TJBA": 3
+    },
+    "n_analitica": 186644,
+    "n_por_tribunal": {
+      "TJSP": 21826,
+      "TJES": 37560,
+      "TJPA": 34254,
+      "TJBA": 93004
+    },
+    "n_merito": 153559,
+    "n_merito_por_tribunal": {
+      "TJSP": 17285,
+      "TJES": 33924,
+      "TJPA": 29926,
+      "TJBA": 72424
+    },
+    "n_processos": 153168,
+    "n_processos_por_tribunal": {
+      "TJSP": 21582,
+      "TJES": 34933,
+      "TJPA": 31809,
+      "TJBA": 64844
+    },
+    "n_processos_primeiro_grau": 105184,
+    "n_processos_primeiro_grau_por_tribunal": {
+      "TJSP": 14574,
+      "TJES": 23157,
+      "TJPA": 24389,
+      "TJBA": 43064
+    }
+  },
+  "preenchimento": [
+    {
+      "tribunal": "TJSP",
+      "n": 21826,
+      "relator_campo": 0,
+      "orgao_colegiado": 100,
+      "classe": 100,
+      "assunto": 100,
+      "data_publicacao": 99.812151,
+      "processo_20_digitos": 100,
+      "numero_cnj_valido": 99.990837,
+      "inteiro_teor_diferente": 0,
+      "sem_ementa": 0,
+      "modelo_cnj": 20.768808,
+      "excluidas": 0
+    },
+    {
+      "tribunal": "TJES",
+      "n": 58742,
+      "relator_campo": 100,
+      "orgao_colegiado": 100,
+      "classe": 100,
+      "assunto": 99.996595,
+      "data_publicacao": 0,
+      "processo_20_digitos": 100,
+      "numero_cnj_valido": 100,
+      "inteiro_teor_diferente": 100,
+      "sem_ementa": 26.870042,
+      "modelo_cnj": 59.684723,
+      "excluidas": 36.059378
+    },
+    {
+      "tribunal": "TJPA",
+      "n": 34255,
+      "relator_campo": 100,
+      "orgao_colegiado": 100,
+      "classe": 100,
+      "assunto": 100,
+      "data_publicacao": 0.055466,
+      "processo_20_digitos": 100,
+      "numero_cnj_valido": 100,
+      "inteiro_teor_diferente": 100,
+      "sem_ementa": 0,
+      "modelo_cnj": 91.846446,
+      "excluidas": 0.002919
+    },
+    {
+      "tribunal": "TJBA",
+      "n": 93007,
+      "relator_campo": 100,
+      "orgao_colegiado": 100,
+      "classe": 100,
+      "assunto": 0.313955,
+      "data_publicacao": 100,
+      "processo_20_digitos": 100,
+      "numero_cnj_valido": 99.991398,
+      "inteiro_teor_diferente": 100,
+      "sem_ementa": 0.001075,
+      "modelo_cnj": 63.295236,
+      "excluidas": 0.003226
+    }
+  ],
+  "cobertura_resultado": [
+    {
+      "resultado": "provido",
+      "TJSP": 14.386512,
+      "TJES": 17.430777,
+      "TJPA": 12.109535,
+      "TJBA": 14.015526,
+      "Total": 14.396391,
+      "_row": "provido"
+    },
+    {
+      "resultado": "parcialmente provido",
+      "TJSP": 13.910016,
+      "TJES": 13.990948,
+      "TJPA": 13.119636,
+      "TJBA": 12.379037,
+      "Total": 13.018367,
+      "_row": "parcialmente provido"
+    },
+    {
+      "resultado": "não provido",
+      "TJSP": 48.034454,
+      "TJES": 51.666667,
+      "TJPA": 56.810883,
+      "TJBA": 44.834631,
+      "Total": 48.781638,
+      "_row": "não provido"
+    },
+    {
+      "resultado": "não conhecido",
+      "TJSP": 5.122331,
+      "TJES": 2.063365,
+      "TJPA": 3.325159,
+      "TJBA": 1.204249,
+      "Total": 2.224556,
+      "_row": "não conhecido"
+    },
+    {
+      "resultado": "prejudicado",
+      "TJSP": 2.116742,
+      "TJES": 1.078275,
+      "TJPA": 1.126876,
+      "TJBA": 1.414993,
+      "Total": 1.376417,
+      "_row": "prejudicado"
+    },
+    {
+      "resultado": "não admitido",
+      "TJSP": 0.251993,
+      "TJES": 0.07721,
+      "TJPA": 0.023355,
+      "TJBA": 0.034407,
+      "Total": 0.066437,
+      "_row": "não admitido"
+    },
+    {
+      "resultado": "ordem concedida",
+      "TJSP": 0.334463,
+      "TJES": 0.891906,
+      "TJPA": 1.027617,
+      "TJBA": 2.855791,
+      "Total": 1.830222,
+      "_row": "ordem concedida"
+    },
+    {
+      "resultado": "ordem denegada",
+      "TJSP": 2.304591,
+      "TJES": 5.881257,
+      "TJPA": 4.049162,
+      "TJBA": 3.334265,
+      "Total": 3.857611,
+      "_row": "ordem denegada"
+    },
+    {
+      "resultado": "embargos acolhidos",
+      "TJSP": 1.51654,
+      "TJES": 0.942492,
+      "TJPA": 0.878729,
+      "TJBA": 3.157929,
+      "Total": 2.101862,
+      "_row": "embargos acolhidos"
+    },
+    {
+      "resultado": "embargos rejeitados",
+      "TJSP": 7.326125,
+      "TJES": 3.264111,
+      "TJPA": 5.050505,
+      "TJBA": 14.22627,
+      "Total": 9.529371,
+      "_row": "embargos rejeitados"
+    },
+    {
+      "resultado": "procedente/improcedente",
+      "TJSP": 2.034271,
+      "TJES": 1.496273,
+      "TJPA": 1.547265,
+      "TJBA": 1.506387,
+      "Total": 1.573584,
+      "_row": "procedente/improcedente"
+    },
+    {
+      "resultado": "sentença mantida",
+      "TJSP": 0.224503,
+      "TJES": 0.457934,
+      "TJPA": 0.248146,
+      "TJBA": 0.452669,
+      "Total": 0.389512,
+      "_row": "sentença mantida"
+    },
+    {
+      "resultado": "sem ementa",
+      "TJSP": 0,
+      "TJES": 0.061235,
+      "TJPA": 0,
+      "TJBA": 0.001075,
+      "Total": 0.012859,
+      "_row": "sem ementa"
+    },
+    {
+      "resultado": "não identificado",
+      "TJSP": 2.43746,
+      "TJES": 0.697551,
+      "TJPA": 0.683132,
+      "TJBA": 0.582771,
+      "Total": 0.841174,
+      "_row": "não identificado"
+    }
+  ],
+  "resultado_janela": [
+    {
+      "—": 2.43746,
+      "acordam": 0,
+      "cabecalho": 0.682672,
+      "dispositivo": 20.109044,
+      "fim300": 75.575002,
+      "todo": 1.195821,
+      "_row": "TJSP"
+    },
+    {
+      "—": 0.758786,
+      "acordam": 2.449414,
+      "cabecalho": 1.160809,
+      "dispositivo": 83.00852,
+      "fim300": 11.850373,
+      "todo": 0.772098,
+      "_row": "TJES"
+    },
+    {
+      "—": 0.683132,
+      "acordam": 77.009984,
+      "cabecalho": 0.467099,
+      "dispositivo": 17.20383,
+      "fim300": 3.751387,
+      "todo": 0.884568,
+      "_row": "TJPA"
+    },
+    {
+      "—": 0.583846,
+      "acordam": 93.665864,
+      "cabecalho": 0.189239,
+      "dispositivo": 3.174057,
+      "fim300": 0.730076,
+      "todo": 1.656918,
+      "_row": "TJBA"
+    }
+  ],
+  "numeracao_cnj": {
+    "pct_validos": {
+      "TJSP": 99.990837,
+      "TJES": 100,
+      "TJPA": 100,
+      "TJBA": 99.991398
+    },
+    "pct_originario": {
+      "TJSP": 32.468842,
+      "TJES": 33.112354,
+      "TJPA": 22.835289,
+      "TJBA": 30.846488
+    },
+    "origem_por_classe": [
+      {
+        "Originário do tribunal": 53.513299,
+        "Primeiro grau": 46.486701,
+        "_row": "Agravo de execução penal"
+      },
+      {
+        "Originário do tribunal": 99.215162,
+        "Primeiro grau": 0.784838,
+        "_row": "Agravo de instrumento"
+      },
+      {
+        "Originário do tribunal": 43.715847,
+        "Primeiro grau": 56.284153,
+        "_row": "Agravo interno"
+      },
+      {
+        "Originário do tribunal": 0.065704,
+        "Primeiro grau": 99.934296,
+        "_row": "Apelação cível"
+      },
+      {
+        "Originário do tribunal": 0.060396,
+        "Primeiro grau": 99.939604,
+        "_row": "Apelação criminal"
+      },
+      {
+        "Originário do tribunal": 28.501321,
+        "Primeiro grau": 71.498679,
+        "_row": "Embargos de declaração"
+      },
+      {
+        "Originário do tribunal": 99.428105,
+        "Primeiro grau": 0.571895,
+        "_row": "Habeas corpus"
+      },
+      {
+        "Originário do tribunal": 97.196636,
+        "Primeiro grau": 2.803364,
+        "_row": "Mandado de segurança"
+      },
+      {
+        "Originário do tribunal": 94.545743,
+        "Primeiro grau": 5.454257,
+        "_row": "Outras"
+      },
+      {
+        "Originário do tribunal": 1.861702,
+        "Primeiro grau": 98.138298,
+        "_row": "Recurso em sentido estrito"
+      },
+      {
+        "Originário do tribunal": 0.309789,
+        "Primeiro grau": 99.690211,
+        "_row": "Remessa necessária"
+      }
+    ]
+  },
+  "classes": [
+    {
+      "TJSP": 3.262164,
+      "TJES": 2.71033,
+      "TJPA": 0.957552,
+      "TJBA": 0.495678,
+      "_row": "Agravo de execução penal"
+    },
+    {
+      "TJSP": 21.744708,
+      "TJES": 19.888179,
+      "TJPA": 12.340165,
+      "TJBA": 19.309922,
+      "_row": "Agravo de instrumento"
+    },
+    {
+      "TJSP": 2.744433,
+      "TJES": 0,
+      "TJPA": 0.388276,
+      "TJBA": 0,
+      "_row": "Agravo interno"
+    },
+    {
+      "TJSP": 49.550994,
+      "TJES": 47.348243,
+      "TJPA": 50.113855,
+      "TJBA": 60.443637,
+      "_row": "Apelação cível"
+    },
+    {
+      "TJSP": 5.585082,
+      "TJES": 16.618743,
+      "TJPA": 21.644188,
+      "TJBA": 5.369662,
+      "_row": "Apelação criminal"
+    },
+    {
+      "TJSP": 10.084303,
+      "TJES": 0,
+      "TJPA": 1.307876,
+      "TJBA": 0,
+      "_row": "Embargos de declaração"
+    },
+    {
+      "TJSP": 2.9781,
+      "TJES": 7.521299,
+      "TJPA": 5.631459,
+      "TJBA": 3.402004,
+      "_row": "Habeas corpus"
+    },
+    {
+      "TJSP": 0.316137,
+      "TJES": 0.479233,
+      "TJPA": 0.954633,
+      "TJBA": 4.751409,
+      "_row": "Mandado de segurança"
+    },
+    {
+      "TJSP": 2.712361,
+      "TJES": 2.891374,
+      "TJPA": 3.047819,
+      "TJBA": 3.855748,
+      "_row": "Outras"
+    },
+    {
+      "TJSP": 0.343627,
+      "TJES": 1.831736,
+      "TJPA": 3.141239,
+      "TJBA": 1.256935,
+      "_row": "Recurso em sentido estrito"
+    },
+    {
+      "TJSP": 0.67809,
+      "TJES": 0.710863,
+      "TJPA": 0.472937,
+      "TJBA": 1.115006,
+      "_row": "Remessa necessária"
+    }
+  ],
+  "materia": [
+    {
+      "Cível": 86.351141,
+      "Criminal": 13.648859,
+      "_row": "TJSP"
+    },
+    {
+      "Cível": 69.648562,
+      "Criminal": 30.351438,
+      "_row": "TJES"
+    },
+    {
+      "Cível": 65.560227,
+      "Criminal": 34.439773,
+      "_row": "TJPA"
+    },
+    {
+      "Cível": 88.969292,
+      "Criminal": 11.030708,
+      "_row": "TJBA"
+    }
+  ],
+  "tipo_julgamento": [
+    {
+      "—": 2.43746,
+      "Ação originária (HC/MS)": 2.639054,
+      "Embargos de declaração": 8.842665,
+      "Outra ação originária": 2.034271,
+      "Recurso": 84.04655,
+      "_row": "TJSP"
+    },
+    {
+      "—": 0.758786,
+      "Ação originária (HC/MS)": 6.773163,
+      "Embargos de declaração": 4.206603,
+      "Outra ação originária": 1.496273,
+      "Recurso": 86.765176,
+      "_row": "TJES"
+    },
+    {
+      "—": 0.683132,
+      "Ação originária (HC/MS)": 5.076779,
+      "Embargos de declaração": 5.929235,
+      "Outra ação originária": 1.547265,
+      "Recurso": 86.76359,
+      "_row": "TJPA"
+    },
+    {
+      "—": 0.583846,
+      "Ação originária (HC/MS)": 6.190056,
+      "Embargos de declaração": 17.384199,
+      "Outra ação originária": 1.506387,
+      "Recurso": 74.335512,
+      "_row": "TJBA"
+    }
+  ],
+  "relatores_distintos": {
+    "TJSP": 481,
+    "TJES": 48,
+    "TJPA": 38,
+    "TJBA": 106
+  },
+  "duplicatas": {
+    "processos_com_mais_de_uma_decisao": {
+      "TJSP": 234,
+      "TJES": 2566,
+      "TJPA": 2388,
+      "TJBA": 19294
+    },
+    "decisoes_mesmo_processo_e_data": {
+      "TJSP": 205,
+      "TJES": 0,
+      "TJPA": 14,
+      "TJBA": 32193
+    }
+  },
+  "descritiva": [
+    {
+      "grupo": "Total",
+      "variavel": "tempo_tramitacao",
+      "n": 153168,
+      "media": 3.781227,
+      "mediana": 2,
+      "moda": 0,
+      "desvio": 4.551847,
+      "variancia": 20.719307,
+      "min": 0,
+      "q1": 1,
+      "q3": 5,
+      "max": 45,
+      "amplitude": 45,
+      "iqr": 4,
+      "cv": 120.380141,
+      "assimetria": 2.112969,
+      "curtose": 6.182072
+    },
+    {
+      "grupo": "Total",
+      "variavel": "n_palavras_ementa",
+      "n": 185167,
+      "media": 371.160558,
+      "mediana": 372,
+      "moda": 372,
+      "desvio": 237.895539,
+      "variancia": 56594.287659,
+      "min": 1,
+      "q1": 227,
+      "q3": 488,
+      "max": 25927,
+      "amplitude": 25926,
+      "iqr": 261,
+      "cv": 64.095048,
+      "assimetria": 10.665256,
+      "curtose": 792.55174
+    },
+    {
+      "grupo": "Total",
+      "variavel": "carga_relator",
+      "n": 186644,
+      "media": 1298.403238,
+      "mediana": 1400,
+      "moda": 3348,
+      "desvio": 701.029963,
+      "variancia": 491443.00909,
+      "min": 1,
+      "q1": 746,
+      "q3": 1785,
+      "max": 3348,
+      "amplitude": 3347,
+      "iqr": 1039,
+      "cv": 53.991699,
+      "assimetria": -0.086861,
+      "curtose": -0.017812
+    },
+    {
+      "grupo": "TJSP",
+      "variavel": "tempo_tramitacao",
+      "n": 21582,
+      "media": 2.079557,
+      "mediana": 1,
+      "moda": 1,
+      "desvio": 3.340412,
+      "variancia": 11.158352,
+      "min": 0,
+      "q1": 0,
+      "q3": 2,
+      "max": 45,
+      "amplitude": 45,
+      "iqr": 2,
+      "cv": 160.630939,
+      "assimetria": 3.505773,
+      "curtose": 16.316828
+    },
+    {
+      "grupo": "TJSP",
+      "variavel": "n_palavras_ementa",
+      "n": 21826,
+      "media": 154.382067,
+      "mediana": 119,
+      "moda": 45,
+      "desvio": 135.837651,
+      "variancia": 18451.867443,
+      "min": 1,
+      "q1": 69,
+      "q3": 206,
+      "max": 3412,
+      "amplitude": 3411,
+      "iqr": 137,
+      "cv": 87.987973,
+      "assimetria": 5.451318,
+      "curtose": 77.688045
+    },
+    {
+      "grupo": "TJSP",
+      "variavel": "carga_relator",
+      "n": 21826,
+      "media": 102.046825,
+      "mediana": 73,
+      "moda": 53,
+      "desvio": 82.367228,
+      "variancia": 6784.360327,
+      "min": 1,
+      "q1": 41,
+      "q3": 147,
+      "max": 331,
+      "amplitude": 330,
+      "iqr": 106,
+      "cv": 80.715131,
+      "assimetria": 1.152799,
+      "curtose": 0.454412
+    },
+    {
+      "grupo": "TJES",
+      "variavel": "tempo_tramitacao",
+      "n": 34933,
+      "media": 3.555664,
+      "mediana": 2,
+      "moda": 1,
+      "desvio": 4.062255,
+      "variancia": 16.501918,
+      "min": 0,
+      "q1": 1,
+      "q3": 5,
+      "max": 34,
+      "amplitude": 34,
+      "iqr": 4,
+      "cv": 114.247456,
+      "assimetria": 1.969942,
+      "curtose": 5.206459
+    },
+    {
+      "grupo": "TJES",
+      "variavel": "n_palavras_ementa",
+      "n": 37537,
+      "media": 436.860564,
+      "mediana": 444,
+      "moda": 470,
+      "desvio": 158.257592,
+      "variancia": 25045.465532,
+      "min": 22,
+      "q1": 349,
+      "q3": 531,
+      "max": 5123,
+      "amplitude": 5101,
+      "iqr": 182,
+      "cv": 36.226111,
+      "assimetria": 1.160726,
+      "curtose": 26.218439
+    },
+    {
+      "grupo": "TJES",
+      "variavel": "carga_relator",
+      "n": 37560,
+      "media": 1258.483307,
+      "mediana": 1304,
+      "moda": 1234,
+      "desvio": 374.576084,
+      "variancia": 140307.242726,
+      "min": 7,
+      "q1": 1228,
+      "q3": 1508,
+      "max": 1892,
+      "amplitude": 1885,
+      "iqr": 280,
+      "cv": 29.764088,
+      "assimetria": -1.172125,
+      "curtose": 1.373115
+    },
+    {
+      "grupo": "TJPA",
+      "variavel": "tempo_tramitacao",
+      "n": 31809,
+      "media": 4.708793,
+      "mediana": 3,
+      "moda": 1,
+      "desvio": 4.556271,
+      "variancia": 20.759606,
+      "min": 0,
+      "q1": 1,
+      "q3": 7,
+      "max": 42,
+      "amplitude": 42,
+      "iqr": 6,
+      "cv": 96.76091,
+      "assimetria": 1.614256,
+      "curtose": 3.579906
+    },
+    {
+      "grupo": "TJPA",
+      "variavel": "n_palavras_ementa",
+      "n": 34254,
+      "media": 428.543791,
+      "mediana": 424,
+      "moda": 394,
+      "desvio": 138.943211,
+      "variancia": 19305.216005,
+      "min": 1,
+      "q1": 339,
+      "q3": 513,
+      "max": 2439,
+      "amplitude": 2438,
+      "iqr": 174,
+      "cv": 32.422174,
+      "assimetria": 0.588213,
+      "curtose": 3.924033
+    },
+    {
+      "grupo": "TJPA",
+      "variavel": "carga_relator",
+      "n": 34254,
+      "media": 1328.935599,
+      "mediana": 1440,
+      "moda": 1883,
+      "desvio": 475.316011,
+      "variancia": 225925.310482,
+      "min": 7,
+      "q1": 1048,
+      "q3": 1771,
+      "max": 1883,
+      "amplitude": 1876,
+      "iqr": 723,
+      "cv": 35.76667,
+      "assimetria": -0.816592,
+      "curtose": -0.330312
+    },
+    {
+      "grupo": "TJBA",
+      "variavel": "tempo_tramitacao",
+      "n": 64844,
+      "media": 4.014095,
+      "mediana": 2,
+      "moda": 0,
+      "desvio": 4.968608,
+      "variancia": 24.687061,
+      "min": 0,
+      "q1": 1,
+      "q3": 6,
+      "max": 44,
+      "amplitude": 44,
+      "iqr": 5,
+      "cv": 123.779012,
+      "assimetria": 2.134619,
+      "curtose": 6.227484
+    },
+    {
+      "grupo": "TJBA",
+      "variavel": "n_palavras_ementa",
+      "n": 91550,
+      "media": 374.433315,
+      "mediana": 357,
+      "moda": 42,
+      "desvio": 279.928743,
+      "variancia": 78360.10089,
+      "min": 1,
+      "q1": 226,
+      "q3": 477,
+      "max": 25927,
+      "amplitude": 25926,
+      "iqr": 251,
+      "cv": 74.76064,
+      "assimetria": 13.027559,
+      "curtose": 833.2985
+    },
+    {
+      "grupo": "TJBA",
+      "variavel": "carga_relator",
+      "n": 93004,
+      "media": 1584.038396,
+      "mediana": 1703,
+      "moda": 3348,
+      "desvio": 652.93394,
+      "variancia": 426322.730126,
+      "min": 1,
+      "q1": 1168,
+      "q3": 1990,
+      "max": 3348,
+      "amplitude": 3347,
+      "iqr": 822,
+      "cv": 41.219578,
+      "assimetria": 0.054181,
+      "curtose": 0.483466
+    }
+  ],
+  "tempo_por_origem": [
+    {
+      "tribunal": "TJSP",
+      "origem": "Originário do tribunal",
+      "n": 7008,
+      "mediana": 0,
+      "q1": 0,
+      "q3": 1,
+      "p90": 1,
+      "pct_zero": 73.116438
+    },
+    {
+      "tribunal": "TJSP",
+      "origem": "Primeiro grau",
+      "n": 14574,
+      "mediana": 2,
+      "q1": 1,
+      "q3": 3,
+      "p90": 7,
+      "pct_zero": 11.060793
+    },
+    {
+      "tribunal": "TJES",
+      "origem": "Originário do tribunal",
+      "n": 11776,
+      "mediana": 0,
+      "q1": 0,
+      "q3": 1,
+      "p90": 1,
+      "pct_zero": 53.727921
+    },
+    {
+      "tribunal": "TJES",
+      "origem": "Primeiro grau",
+      "n": 23157,
+      "mediana": 4,
+      "q1": 2,
+      "q3": 7,
+      "p90": 11,
+      "pct_zero": 2.832837
+    },
+    {
+      "tribunal": "TJPA",
+      "origem": "Originário do tribunal",
+      "n": 7420,
+      "mediana": 1,
+      "q1": 0,
+      "q3": 1,
+      "p90": 2,
+      "pct_zero": 48.423181
+    },
+    {
+      "tribunal": "TJPA",
+      "origem": "Primeiro grau",
+      "n": 24389,
+      "mediana": 5,
+      "q1": 3,
+      "q3": 8,
+      "p90": 12,
+      "pct_zero": 1.049654
+    },
+    {
+      "tribunal": "TJBA",
+      "origem": "Originário do tribunal",
+      "n": 21780,
+      "mediana": 0,
+      "q1": 0,
+      "q3": 1,
+      "p90": 2,
+      "pct_zero": 59.476584
+    },
+    {
+      "tribunal": "TJBA",
+      "origem": "Primeiro grau",
+      "n": 43064,
+      "mediana": 4,
+      "q1": 2,
+      "q3": 8,
+      "p90": 13,
+      "pct_zero": 3.864016
+    }
+  ],
+  "tempo_p90": {
+    "Total": 10,
+    "TJSP": 5,
+    "TJES": 9,
+    "TJPA": 11,
+    "TJBA": 11
+  },
+  "tempo_pct_zero": {
+    "Total": 21.013528,
+    "TJSP": 31.211195,
+    "TJES": 19.989695,
+    "TJPA": 12.100349,
+    "TJBA": 22.543335
+  },
+  "ementa_por_modelo": [
+    {
+      "tribunal": "TJSP",
+      "modelo": "CNJ",
+      "n": 4533,
+      "mediana": 244
+    },
+    {
+      "tribunal": "TJSP",
+      "modelo": "Tradicional",
+      "n": 17293,
+      "mediana": 97
+    },
+    {
+      "tribunal": "TJES",
+      "modelo": "CNJ",
+      "n": 32420,
+      "mediana": 465
+    },
+    {
+      "tribunal": "TJES",
+      "modelo": "Tradicional",
+      "n": 5117,
+      "mediana": 185
+    },
+    {
+      "tribunal": "TJPA",
+      "modelo": "CNJ",
+      "n": 31461,
+      "mediana": 435
+    },
+    {
+      "tribunal": "TJPA",
+      "modelo": "Tradicional",
+      "n": 2793,
+      "mediana": 239
+    },
+    {
+      "tribunal": "TJBA",
+      "modelo": "CNJ",
+      "n": 58869,
+      "mediana": 416
+    },
+    {
+      "tribunal": "TJBA",
+      "modelo": "Tradicional",
+      "n": 32681,
+      "mediana": 167
+    }
+  ],
+  "adocao_cnj": {
+    "TJSP": 20.768808,
+    "TJES": 86.315229,
+    "TJPA": 91.846208,
+    "TJBA": 63.297278
+  },
+  "resultado_merito": {
+    "pct": [
+      {
+        "Êxito parcial": 17.564362,
+        "Êxito total": 18.588371,
+        "Sem êxito": 63.847266,
+        "_row": "TJSP"
+      },
+      {
+        "Êxito parcial": 15.490508,
+        "Êxito total": 20.286523,
+        "Sem êxito": 64.222969,
+        "_row": "TJES"
+      },
+      {
+        "Êxito parcial": 15.017042,
+        "Êxito total": 15.037091,
+        "Sem êxito": 69.945866,
+        "_row": "TJPA"
+      },
+      {
+        "Êxito parcial": 15.896664,
+        "Êxito total": 21.66547,
+        "Sem êxito": 62.437866,
+        "_row": "TJBA"
+      }
+    ],
+    "n": [
+      {
+        "Êxito parcial": 3036,
+        "Êxito total": 3213,
+        "Sem êxito": 11036,
+        "_row": "TJSP"
+      },
+      {
+        "Êxito parcial": 5255,
+        "Êxito total": 6882,
+        "Sem êxito": 21787,
+        "_row": "TJES"
+      },
+      {
+        "Êxito parcial": 4494,
+        "Êxito total": 4500,
+        "Sem êxito": 20932,
+        "_row": "TJPA"
+      },
+      {
+        "Êxito parcial": 11513,
+        "Êxito total": 15691,
+        "Sem êxito": 45220,
+        "_row": "TJBA"
+      }
+    ],
+    "taxa_exito_total": 35.545947,
+    "taxa_exito": {
+      "TJSP": 36.152734,
+      "TJES": 35.777031,
+      "TJPA": 30.054134,
+      "TJBA": 37.562134
+    }
+  },
+  "taxa_por_classe_grupo": [
+    {
+      "categoria": "Agravo de execução penal",
+      "tribunal": "TJSP",
+      "n": 626,
+      "taxa": 33.226837
+    },
+    {
+      "categoria": "Agravo de execução penal",
+      "tribunal": "TJES",
+      "n": 989,
+      "taxa": 26.188069
+    },
+    {
+      "categoria": "Agravo de execução penal",
+      "tribunal": "TJPA",
+      "n": 266,
+      "taxa": 41.729323
+    },
+    {
+      "categoria": "Agravo de execução penal",
+      "tribunal": "TJBA",
+      "n": 414,
+      "taxa": 34.541063
+    },
+    {
+      "categoria": "Agravo de instrumento",
+      "tribunal": "TJSP",
+      "n": 4299,
+      "taxa": 39.009072
+    },
+    {
+      "categoria": "Agravo de instrumento",
+      "tribunal": "TJES",
+      "n": 6960,
+      "taxa": 38.994253
+    },
+    {
+      "categoria": "Agravo de instrumento",
+      "tribunal": "TJPA",
+      "n": 3783,
+      "taxa": 25.720328
+    },
+    {
+      "categoria": "Agravo de instrumento",
+      "tribunal": "TJBA",
+      "n": 14599,
+      "taxa": 39.160216
+    },
+    {
+      "categoria": "Agravo interno",
+      "tribunal": "TJSP",
+      "n": 475,
+      "taxa": 4.210526
+    },
+    {
+      "categoria": "Agravo interno",
+      "tribunal": "TJPA",
+      "n": 105,
+      "taxa": 0.952381
+    },
+    {
+      "categoria": "Apelação criminal",
+      "tribunal": "TJSP",
+      "n": 1135,
+      "taxa": 38.237885
+    },
+    {
+      "categoria": "Apelação criminal",
+      "tribunal": "TJES",
+      "n": 5886,
+      "taxa": 37.427795
+    },
+    {
+      "categoria": "Apelação criminal",
+      "tribunal": "TJPA",
+      "n": 7150,
+      "taxa": 38.853147
+    },
+    {
+      "categoria": "Apelação criminal",
+      "tribunal": "TJBA",
+      "n": 4409,
+      "taxa": 36.561579
+    },
+    {
+      "categoria": "Apelação cível",
+      "tribunal": "TJSP",
+      "n": 9843,
+      "taxa": 37.620644
+    },
+    {
+      "categoria": "Apelação cível",
+      "tribunal": "TJES",
+      "n": 16308,
+      "taxa": 39.587932
+    },
+    {
+      "categoria": "Apelação cível",
+      "tribunal": "TJPA",
+      "n": 15152,
+      "taxa": 29.118268
+    },
+    {
+      "categoria": "Apelação cível",
+      "tribunal": "TJBA",
+      "n": 43846,
+      "taxa": 37.4675
+    },
+    {
+      "categoria": "Embargos de declaração",
+      "tribunal": "TJSP",
+      "n": 164,
+      "taxa": 56.707317
+    },
+    {
+      "categoria": "Embargos de declaração",
+      "tribunal": "TJPA",
+      "n": 63,
+      "taxa": 46.031746
+    },
+    {
+      "categoria": "Habeas corpus",
+      "tribunal": "TJSP",
+      "n": 472,
+      "taxa": 7.627119
+    },
+    {
+      "categoria": "Habeas corpus",
+      "tribunal": "TJES",
+      "n": 2519,
+      "taxa": 11.433108
+    },
+    {
+      "categoria": "Habeas corpus",
+      "tribunal": "TJPA",
+      "n": 1640,
+      "taxa": 16.829268
+    },
+    {
+      "categoria": "Habeas corpus",
+      "tribunal": "TJBA",
+      "n": 2610,
+      "taxa": 14.750958
+    },
+    {
+      "categoria": "Mandado de segurança",
+      "tribunal": "TJSP",
+      "n": 57,
+      "taxa": 14.035088
+    },
+    {
+      "categoria": "Mandado de segurança",
+      "tribunal": "TJES",
+      "n": 149,
+      "taxa": 33.557047
+    },
+    {
+      "categoria": "Mandado de segurança",
+      "tribunal": "TJPA",
+      "n": 270,
+      "taxa": 35.185185
+    },
+    {
+      "categoria": "Mandado de segurança",
+      "tribunal": "TJBA",
+      "n": 3278,
+      "taxa": 61.561928
+    },
+    {
+      "categoria": "Outras",
+      "tribunal": "TJSP",
+      "n": 24,
+      "taxa": 66.666667
+    },
+    {
+      "categoria": "Outras",
+      "tribunal": "TJES",
+      "n": 227,
+      "taxa": 29.515419
+    },
+    {
+      "categoria": "Outras",
+      "tribunal": "TJPA",
+      "n": 309,
+      "taxa": 25.889968
+    },
+    {
+      "categoria": "Outras",
+      "tribunal": "TJBA",
+      "n": 1458,
+      "taxa": 39.780521
+    },
+    {
+      "categoria": "Recurso em sentido estrito",
+      "tribunal": "TJSP",
+      "n": 65,
+      "taxa": 27.692308
+    },
+    {
+      "categoria": "Recurso em sentido estrito",
+      "tribunal": "TJES",
+      "n": 645,
+      "taxa": 11.317829
+    },
+    {
+      "categoria": "Recurso em sentido estrito",
+      "tribunal": "TJPA",
+      "n": 1045,
+      "taxa": 20.76555
+    },
+    {
+      "categoria": "Recurso em sentido estrito",
+      "tribunal": "TJBA",
+      "n": 1003,
+      "taxa": 21.036889
+    },
+    {
+      "categoria": "Remessa necessária",
+      "tribunal": "TJSP",
+      "n": 125,
+      "taxa": 28.8
+    },
+    {
+      "categoria": "Remessa necessária",
+      "tribunal": "TJES",
+      "n": 241,
+      "taxa": 11.20332
+    },
+    {
+      "categoria": "Remessa necessária",
+      "tribunal": "TJPA",
+      "n": 143,
+      "taxa": 15.384615
+    },
+    {
+      "categoria": "Remessa necessária",
+      "tribunal": "TJBA",
+      "n": 807,
+      "taxa": 13.630731
+    }
+  ],
+  "taxa_por_materia": [
+    {
+      "categoria": "Criminal",
+      "tribunal": "TJSP",
+      "n": 2352,
+      "taxa": 29.97449
+    },
+    {
+      "categoria": "Criminal",
+      "tribunal": "TJES",
+      "n": 10196,
+      "taxa": 28.099255
+    },
+    {
+      "categoria": "Criminal",
+      "tribunal": "TJPA",
+      "n": 10258,
+      "taxa": 33.710275
+    },
+    {
+      "categoria": "Criminal",
+      "tribunal": "TJBA",
+      "n": 8541,
+      "taxa": 27.982672
+    },
+    {
+      "categoria": "Cível",
+      "tribunal": "TJSP",
+      "n": 14933,
+      "taxa": 37.125829
+    },
+    {
+      "categoria": "Cível",
+      "tribunal": "TJES",
+      "n": 23728,
+      "taxa": 39.076197
+    },
+    {
+      "categoria": "Cível",
+      "tribunal": "TJPA",
+      "n": 19668,
+      "taxa": 28.147244
+    },
+    {
+      "categoria": "Cível",
+      "tribunal": "TJBA",
+      "n": 63883,
+      "taxa": 38.842885
+    }
+  ],
+  "taxa_por_modelo_cnj": [
+    {
+      "categoria": false,
+      "tribunal": "TJSP",
+      "n": 13630,
+      "taxa": 36.47102
+    },
+    {
+      "categoria": false,
+      "tribunal": "TJES",
+      "n": 4444,
+      "taxa": 38.253825
+    },
+    {
+      "categoria": false,
+      "tribunal": "TJPA",
+      "n": 2398,
+      "taxa": 34.98749
+    },
+    {
+      "categoria": false,
+      "tribunal": "TJBA",
+      "n": 26531,
+      "taxa": 39.546191
+    },
+    {
+      "categoria": true,
+      "tribunal": "TJSP",
+      "n": 3655,
+      "taxa": 34.9658
+    },
+    {
+      "categoria": true,
+      "tribunal": "TJES",
+      "n": 29480,
+      "taxa": 35.403664
+    },
+    {
+      "categoria": true,
+      "tribunal": "TJPA",
+      "n": 27528,
+      "taxa": 29.624382
+    },
+    {
+      "categoria": true,
+      "tribunal": "TJBA",
+      "n": 45893,
+      "taxa": 36.41514
+    }
+  ],
+  "taxa_por_origem": [
+    {
+      "categoria": "Originário do tribunal",
+      "tribunal": "TJSP",
+      "n": 5136,
+      "taxa": 34.59891
+    },
+    {
+      "categoria": "Originário do tribunal",
+      "tribunal": "TJES",
+      "n": 10760,
+      "taxa": 31.152416
+    },
+    {
+      "categoria": "Originário do tribunal",
+      "tribunal": "TJPA",
+      "n": 6251,
+      "taxa": 24.476084
+    },
+    {
+      "categoria": "Originário do tribunal",
+      "tribunal": "TJBA",
+      "n": 21657,
+      "taxa": 39.516092
+    },
+    {
+      "categoria": "Primeiro grau",
+      "tribunal": "TJSP",
+      "n": 12148,
+      "taxa": 36.812644
+    },
+    {
+      "categoria": "Primeiro grau",
+      "tribunal": "TJES",
+      "n": 23164,
+      "taxa": 37.925229
+    },
+    {
+      "categoria": "Primeiro grau",
+      "tribunal": "TJPA",
+      "n": 23675,
+      "taxa": 31.526927
+    },
+    {
+      "categoria": "Primeiro grau",
+      "tribunal": "TJBA",
+      "n": 50762,
+      "taxa": 36.726291
+    }
+  ],
+  "taxa_por_faixa_tempo": [
+    {
+      "categoria": "0",
+      "tribunal": "TJSP",
+      "n": 5346,
+      "taxa": 32.940516
+    },
+    {
+      "categoria": "0",
+      "tribunal": "TJES",
+      "n": 6364,
+      "taxa": 28.409805
+    },
+    {
+      "categoria": "0",
+      "tribunal": "TJPA",
+      "n": 3192,
+      "taxa": 25.438596
+    },
+    {
+      "categoria": "0",
+      "tribunal": "TJBA",
+      "n": 14640,
+      "taxa": 36.810109
+    },
+    {
+      "categoria": "11+",
+      "tribunal": "TJSP",
+      "n": 608,
+      "taxa": 37.006579
+    },
+    {
+      "categoria": "11+",
+      "tribunal": "TJES",
+      "n": 2391,
+      "taxa": 38.686742
+    },
+    {
+      "categoria": "11+",
+      "tribunal": "TJPA",
+      "n": 3375,
+      "taxa": 32.474074
+    },
+    {
+      "categoria": "11+",
+      "tribunal": "TJBA",
+      "n": 7709,
+      "taxa": 38.033467
+    },
+    {
+      "categoria": "1–2",
+      "tribunal": "TJSP",
+      "n": 8067,
+      "taxa": 37.944713
+    },
+    {
+      "categoria": "1–2",
+      "tribunal": "TJES",
+      "n": 11535,
+      "taxa": 35.908106
+    },
+    {
+      "categoria": "1–2",
+      "tribunal": "TJPA",
+      "n": 8380,
+      "taxa": 29.546539
+    },
+    {
+      "categoria": "1–2",
+      "tribunal": "TJBA",
+      "n": 22624,
+      "taxa": 38.702263
+    },
+    {
+      "categoria": "3–5",
+      "tribunal": "TJSP",
+      "n": 2297,
+      "taxa": 36.830649
+    },
+    {
+      "categoria": "3–5",
+      "tribunal": "TJES",
+      "n": 8056,
+      "taxa": 38.145482
+    },
+    {
+      "categoria": "3–5",
+      "tribunal": "TJPA",
+      "n": 8375,
+      "taxa": 28.537313
+    },
+    {
+      "categoria": "3–5",
+      "tribunal": "TJBA",
+      "n": 14483,
+      "taxa": 36.028447
+    },
+    {
+      "categoria": "6–10",
+      "tribunal": "TJSP",
+      "n": 966,
+      "taxa": 36.853002
+    },
+    {
+      "categoria": "6–10",
+      "tribunal": "TJES",
+      "n": 5578,
+      "taxa": 39.243456
+    },
+    {
+      "categoria": "6–10",
+      "tribunal": "TJPA",
+      "n": 6604,
+      "taxa": 33.61599
+    },
+    {
+      "categoria": "6–10",
+      "tribunal": "TJBA",
+      "n": 12963,
+      "taxa": 37.846178
+    }
+  ],
+  "normalidade": [
+    {
+      "grupo": "Total",
+      "variavel": "tempo_tramitacao",
+      "escala": "original",
+      "teste": "KS-Lilliefors",
+      "n": 153168,
+      "estatistica": 0.207662,
+      "p": 0,
+      "normal": "não"
+    },
+    {
+      "grupo": "Total",
+      "variavel": "tempo_tramitacao",
+      "escala": "log(1+x)",
+      "teste": "KS-Lilliefors",
+      "n": 153168,
+      "estatistica": 0.131634,
+      "p": 0,
+      "normal": "não"
+    },
+    {
+      "grupo": "Total",
+      "variavel": "n_palavras_ementa",
+      "escala": "original",
+      "teste": "KS-Lilliefors",
+      "n": 185167,
+      "estatistica": 0.07738,
+      "p": 0,
+      "normal": "não"
+    },
+    {
+      "grupo": "Total",
+      "variavel": "n_palavras_ementa",
+      "escala": "log(1+x)",
+      "teste": "KS-Lilliefors",
+      "n": 185167,
+      "estatistica": 0.149447,
+      "p": 0,
+      "normal": "não"
+    },
+    {
+      "grupo": "Total",
+      "variavel": "carga_relator",
+      "escala": "original",
+      "teste": "KS-Lilliefors",
+      "n": 186644,
+      "estatistica": 0.097901,
+      "p": 0,
+      "normal": "não"
+    },
+    {
+      "grupo": "Total",
+      "variavel": "carga_relator",
+      "escala": "log(1+x)",
+      "teste": "KS-Lilliefors",
+      "n": 186644,
+      "estatistica": 0.258081,
+      "p": 0,
+      "normal": "não"
+    },
+    {
+      "grupo": "TJSP",
+      "variavel": "tempo_tramitacao",
+      "escala": "original",
+      "teste": "KS-Lilliefors",
+      "n": 21582,
+      "estatistica": 0.28232,
+      "p": 0,
+      "normal": "não"
+    },
+    {
+      "grupo": "TJSP",
+      "variavel": "tempo_tramitacao",
+      "escala": "log(1+x)",
+      "teste": "KS-Lilliefors",
+      "n": 21582,
+      "estatistica": 0.188435,
+      "p": 0,
+      "normal": "não"
+    },
+    {
+      "grupo": "TJSP",
+      "variavel": "n_palavras_ementa",
+      "escala": "original",
+      "teste": "KS-Lilliefors",
+      "n": 21826,
+      "estatistica": 0.146462,
+      "p": 0,
+      "normal": "não"
+    },
+    {
+      "grupo": "TJSP",
+      "variavel": "n_palavras_ementa",
+      "escala": "log(1+x)",
+      "teste": "KS-Lilliefors",
+      "n": 21826,
+      "estatistica": 0.030207,
+      "p": 3.985578e-51,
+      "normal": "não"
+    },
+    {
+      "grupo": "TJSP",
+      "variavel": "carga_relator",
+      "escala": "original",
+      "teste": "KS-Lilliefors",
+      "n": 21826,
+      "estatistica": 0.169241,
+      "p": 0,
+      "normal": "não"
+    },
+    {
+      "grupo": "TJSP",
+      "variavel": "carga_relator",
+      "escala": "log(1+x)",
+      "teste": "KS-Lilliefors",
+      "n": 21826,
+      "estatistica": 0.061164,
+      "p": 6.346962e-219,
+      "normal": "não"
+    },
+    {
+      "grupo": "TJES",
+      "variavel": "tempo_tramitacao",
+      "escala": "original",
+      "teste": "KS-Lilliefors",
+      "n": 34933,
+      "estatistica": 0.196344,
+      "p": 0,
+      "normal": "não"
+    },
+    {
+      "grupo": "TJES",
+      "variavel": "tempo_tramitacao",
+      "escala": "log(1+x)",
+      "teste": "KS-Lilliefors",
+      "n": 34933,
+      "estatistica": 0.131527,
+      "p": 0,
+      "normal": "não"
+    },
+    {
+      "grupo": "TJES",
+      "variavel": "n_palavras_ementa",
+      "escala": "original",
+      "teste": "KS-Lilliefors",
+      "n": 37537,
+      "estatistica": 0.043544,
+      "p": 4.022674e-188,
+      "normal": "não"
+    },
+    {
+      "grupo": "TJES",
+      "variavel": "n_palavras_ementa",
+      "escala": "log(1+x)",
+      "teste": "KS-Lilliefors",
+      "n": 37537,
+      "estatistica": 0.135575,
+      "p": 0,
+      "normal": "não"
+    },
+    {
+      "grupo": "TJES",
+      "variavel": "carga_relator",
+      "escala": "original",
+      "teste": "KS-Lilliefors",
+      "n": 37560,
+      "estatistica": 0.249731,
+      "p": 0,
+      "normal": "não"
+    },
+    {
+      "grupo": "TJES",
+      "variavel": "carga_relator",
+      "escala": "log(1+x)",
+      "teste": "KS-Lilliefors",
+      "n": 37560,
+      "estatistica": 0.328386,
+      "p": 0,
+      "normal": "não"
+    },
+    {
+      "grupo": "TJPA",
+      "variavel": "tempo_tramitacao",
+      "escala": "original",
+      "teste": "KS-Lilliefors",
+      "n": 31809,
+      "estatistica": 0.168621,
+      "p": 0,
+      "normal": "não"
+    },
+    {
+      "grupo": "TJPA",
+      "variavel": "tempo_tramitacao",
+      "escala": "log(1+x)",
+      "teste": "KS-Lilliefors",
+      "n": 31809,
+      "estatistica": 0.092252,
+      "p": 0,
+      "normal": "não"
+    },
+    {
+      "grupo": "TJPA",
+      "variavel": "n_palavras_ementa",
+      "escala": "original",
+      "teste": "KS-Lilliefors",
+      "n": 34254,
+      "estatistica": 0.024546,
+      "p": 1.46508e-52,
+      "normal": "não"
+    },
+    {
+      "grupo": "TJPA",
+      "variavel": "n_palavras_ementa",
+      "escala": "log(1+x)",
+      "teste": "KS-Lilliefors",
+      "n": 34254,
+      "estatistica": 0.099671,
+      "p": 0,
+      "normal": "não"
+    },
+    {
+      "grupo": "TJPA",
+      "variavel": "carga_relator",
+      "escala": "original",
+      "teste": "KS-Lilliefors",
+      "n": 34254,
+      "estatistica": 0.140931,
+      "p": 0,
+      "normal": "não"
+    },
+    {
+      "grupo": "TJPA",
+      "variavel": "carga_relator",
+      "escala": "log(1+x)",
+      "teste": "KS-Lilliefors",
+      "n": 34254,
+      "estatistica": 0.20601,
+      "p": 0,
+      "normal": "não"
+    },
+    {
+      "grupo": "TJBA",
+      "variavel": "tempo_tramitacao",
+      "escala": "original",
+      "teste": "KS-Lilliefors",
+      "n": 64844,
+      "estatistica": 0.209577,
+      "p": 0,
+      "normal": "não"
+    },
+    {
+      "grupo": "TJBA",
+      "variavel": "tempo_tramitacao",
+      "escala": "log(1+x)",
+      "teste": "KS-Lilliefors",
+      "n": 64844,
+      "estatistica": 0.134403,
+      "p": 0,
+      "normal": "não"
+    },
+    {
+      "grupo": "TJBA",
+      "variavel": "n_palavras_ementa",
+      "escala": "original",
+      "teste": "KS-Lilliefors",
+      "n": 91550,
+      "estatistica": 0.115731,
+      "p": 0,
+      "normal": "não"
+    },
+    {
+      "grupo": "TJBA",
+      "variavel": "n_palavras_ementa",
+      "escala": "log(1+x)",
+      "teste": "KS-Lilliefors",
+      "n": 91550,
+      "estatistica": 0.14137,
+      "p": 0,
+      "normal": "não"
+    },
+    {
+      "grupo": "TJBA",
+      "variavel": "carga_relator",
+      "escala": "original",
+      "teste": "KS-Lilliefors",
+      "n": 93004,
+      "estatistica": 0.137857,
+      "p": 0,
+      "normal": "não"
+    },
+    {
+      "grupo": "TJBA",
+      "variavel": "carga_relator",
+      "escala": "log(1+x)",
+      "teste": "KS-Lilliefors",
+      "n": 93004,
+      "estatistica": 0.217363,
+      "p": 0,
+      "normal": "não"
+    }
+  ],
+  "correlacao_decisao": [
+    {
+      "grupo": "Total",
+      "par": "Tramitação × Ementa",
+      "n": 185157,
+      "pearson_r": 0.018561,
+      "p_r": 1.379195e-15,
+      "spearman_rho": 0.046254,
+      "p_rho": 3.102958e-88
+    },
+    {
+      "grupo": "Total",
+      "par": "Tramitação × Carga",
+      "n": 186634,
+      "pearson_r": 0.115874,
+      "p_r": 0,
+      "spearman_rho": 0.115195,
+      "p_rho": 0
+    },
+    {
+      "grupo": "Total",
+      "par": "Carga × Ementa",
+      "n": 185167,
+      "pearson_r": 0.044525,
+      "p_r": 6.719822e-82,
+      "spearman_rho": 0.075892,
+      "p_rho": 1.359196e-234
+    },
+    {
+      "grupo": "Total",
+      "par": "Êxito × Tramitação",
+      "n": 153553,
+      "pearson_r": 0.017115,
+      "p_r": 1.986382e-11,
+      "spearman_rho": 0.019623,
+      "p_rho": 1.468871e-14
+    },
+    {
+      "grupo": "Total",
+      "par": "Êxito × Ementa",
+      "n": 152473,
+      "pearson_r": 0.019873,
+      "p_r": 8.442559e-15,
+      "spearman_rho": 0.018962,
+      "p_rho": 1.314536e-13
+    },
+    {
+      "grupo": "Total",
+      "par": "Êxito × Carga",
+      "n": 153559,
+      "pearson_r": 0.038355,
+      "p_r": 4.293127e-51,
+      "spearman_rho": 0.042279,
+      "p_rho": 1.058011e-61
+    },
+    {
+      "grupo": "TJSP",
+      "par": "Tramitação × Ementa",
+      "n": 21824,
+      "pearson_r": 0.003311,
+      "p_r": 0.624724,
+      "spearman_rho": 0.042256,
+      "p_rho": 4.240923e-10
+    },
+    {
+      "grupo": "TJSP",
+      "par": "Tramitação × Carga",
+      "n": 21824,
+      "pearson_r": 0.125677,
+      "p_r": 1.547465e-77,
+      "spearman_rho": 0.071643,
+      "p_rho": 3.08464e-26
+    },
+    {
+      "grupo": "TJSP",
+      "par": "Carga × Ementa",
+      "n": 21826,
+      "pearson_r": -0.184754,
+      "p_r": 7.54477e-167,
+      "spearman_rho": -0.191984,
+      "p_rho": 3.012013e-180
+    },
+    {
+      "grupo": "TJSP",
+      "par": "Êxito × Tramitação",
+      "n": 17284,
+      "pearson_r": 0.010106,
+      "p_r": 0.184014,
+      "spearman_rho": 0.033855,
+      "p_rho": 8.512019e-06
+    },
+    {
+      "grupo": "TJSP",
+      "par": "Êxito × Ementa",
+      "n": 17285,
+      "pearson_r": 0.088084,
+      "p_r": 4.007277e-31,
+      "spearman_rho": 0.096974,
+      "p_rho": 2.158685e-37
+    },
+    {
+      "grupo": "TJSP",
+      "par": "Êxito × Carga",
+      "n": 17285,
+      "pearson_r": -0.075209,
+      "p_r": 4.111792e-23,
+      "spearman_rho": -0.043659,
+      "p_rho": 9.343261e-09
+    },
+    {
+      "grupo": "TJES",
+      "par": "Tramitação × Ementa",
+      "n": 37537,
+      "pearson_r": -0.002874,
+      "p_r": 0.577619,
+      "spearman_rho": 0.006467,
+      "p_rho": 0.210259
+    },
+    {
+      "grupo": "TJES",
+      "par": "Tramitação × Carga",
+      "n": 37560,
+      "pearson_r": -0.054438,
+      "p_r": 4.678249e-26,
+      "spearman_rho": -0.083392,
+      "p_rho": 6.002827e-59
+    },
+    {
+      "grupo": "TJES",
+      "par": "Carga × Ementa",
+      "n": 37537,
+      "pearson_r": -0.101493,
+      "p_r": 1.636976e-86,
+      "spearman_rho": -0.193652,
+      "p_rho": 6.208099e-314
+    },
+    {
+      "grupo": "TJES",
+      "par": "Êxito × Tramitação",
+      "n": 33924,
+      "pearson_r": 0.046613,
+      "p_r": 8.712658e-18,
+      "spearman_rho": 0.070305,
+      "p_rho": 1.939704e-38
+    },
+    {
+      "grupo": "TJES",
+      "par": "Êxito × Ementa",
+      "n": 33924,
+      "pearson_r": 0.042312,
+      "p_r": 6.365929e-15,
+      "spearman_rho": 0.033696,
+      "p_rho": 5.372961e-10
+    },
+    {
+      "grupo": "TJES",
+      "par": "Êxito × Carga",
+      "n": 33924,
+      "pearson_r": -0.009654,
+      "p_r": 0.075386,
+      "spearman_rho": -0.01843,
+      "p_rho": 0.000687
+    },
+    {
+      "grupo": "TJPA",
+      "par": "Tramitação × Ementa",
+      "n": 34254,
+      "pearson_r": -0.017765,
+      "p_r": 0.001009,
+      "spearman_rho": -0.028485,
+      "p_rho": 1.343927e-07
+    },
+    {
+      "grupo": "TJPA",
+      "par": "Tramitação × Carga",
+      "n": 34254,
+      "pearson_r": -0.000879,
+      "p_r": 0.870708,
+      "spearman_rho": 0.010133,
+      "p_rho": 0.060743
+    },
+    {
+      "grupo": "TJPA",
+      "par": "Carga × Ementa",
+      "n": 34254,
+      "pearson_r": 0.059057,
+      "p_r": 7.471563e-28,
+      "spearman_rho": 0.075522,
+      "p_rho": 1.628709e-44
+    },
+    {
+      "grupo": "TJPA",
+      "par": "Êxito × Tramitação",
+      "n": 29926,
+      "pearson_r": 0.040606,
+      "p_r": 2.107997e-12,
+      "spearman_rho": 0.047709,
+      "p_rho": 1.487332e-16
+    },
+    {
+      "grupo": "TJPA",
+      "par": "Êxito × Ementa",
+      "n": 29926,
+      "pearson_r": 0.088618,
+      "p_r": 3.04626e-53,
+      "spearman_rho": 0.079048,
+      "p_rho": 1.079135e-42
+    },
+    {
+      "grupo": "TJPA",
+      "par": "Êxito × Carga",
+      "n": 29926,
+      "pearson_r": 0.085206,
+      "p_r": 2.420865e-49,
+      "spearman_rho": 0.071028,
+      "p_rho": 8.804054e-35
+    },
+    {
+      "grupo": "TJBA",
+      "par": "Tramitação × Ementa",
+      "n": 91542,
+      "pearson_r": -0.042727,
+      "p_r": 2.930526e-38,
+      "spearman_rho": -0.066199,
+      "p_rho": 1.989241e-89
+    },
+    {
+      "grupo": "TJBA",
+      "par": "Tramitação × Carga",
+      "n": 92996,
+      "pearson_r": 0.045799,
+      "p_r": 2.26196e-44,
+      "spearman_rho": 0.033914,
+      "p_rho": 4.416436e-25
+    },
+    {
+      "grupo": "TJBA",
+      "par": "Carga × Ementa",
+      "n": 91550,
+      "pearson_r": -0.250689,
+      "p_r": 0,
+      "spearman_rho": -0.164541,
+      "p_rho": 0
+    },
+    {
+      "grupo": "TJBA",
+      "par": "Êxito × Tramitação",
+      "n": 72419,
+      "pearson_r": 0.006212,
+      "p_r": 0.094595,
+      "spearman_rho": 0.000567,
+      "p_rho": 0.878819
+    },
+    {
+      "grupo": "TJBA",
+      "par": "Êxito × Ementa",
+      "n": 71338,
+      "pearson_r": 0.007296,
+      "p_r": 0.051338,
+      "spearman_rho": 0.009609,
+      "p_rho": 0.010271
+    },
+    {
+      "grupo": "TJBA",
+      "par": "Êxito × Carga",
+      "n": 72424,
+      "pearson_r": 0.055497,
+      "p_r": 1.639572e-50,
+      "spearman_rho": 0.054038,
+      "p_rho": 5.598725e-48
+    }
+  ],
+  "relatores": [
+    {
+      "tribunal": "TJSP",
+      "n": 198,
+      "taxa_mediana": 37.8595,
+      "taxa_min": 0,
+      "taxa_max": 84.210526,
+      "taxa_q1": 29.768562,
+      "taxa_q3": 45,
+      "carga_mediana": 62
+    },
+    {
+      "tribunal": "TJES",
+      "n": 40,
+      "taxa_mediana": 36.729415,
+      "taxa_min": 10.884354,
+      "taxa_max": 48.868778,
+      "taxa_q1": 31.672329,
+      "taxa_q3": 40.740377,
+      "carga_mediana": 1231
+    },
+    {
+      "tribunal": "TJPA",
+      "n": 36,
+      "taxa_mediana": 29.874756,
+      "taxa_min": 8.885942,
+      "taxa_max": 51.515152,
+      "taxa_q1": 22.76532,
+      "taxa_q3": 35.747985,
+      "carga_mediana": 988
+    },
+    {
+      "tribunal": "TJBA",
+      "n": 81,
+      "taxa_mediana": 36.821705,
+      "taxa_min": 0.439754,
+      "taxa_max": 64.705882,
+      "taxa_q1": 30.576923,
+      "taxa_q3": 42.436149,
+      "carga_mediana": 1148
+    }
+  ],
+  "normalidade_relator": [
+    {
+      "grupo": "Total",
+      "variavel": "n_decisoes",
+      "teste": "Shapiro-Wilk",
+      "n": 355,
+      "estatistica": 0.739587,
+      "p": 3.196014e-23,
+      "normal": "não"
+    },
+    {
+      "grupo": "Total",
+      "variavel": "taxa_exito",
+      "teste": "Shapiro-Wilk",
+      "n": 355,
+      "estatistica": 0.987856,
+      "p": 0.004613,
+      "normal": "não"
+    },
+    {
+      "grupo": "Total",
+      "variavel": "ementa_mediana",
+      "teste": "Shapiro-Wilk",
+      "n": 355,
+      "estatistica": 0.838128,
+      "p": 1.251449e-18,
+      "normal": "não"
+    },
+    {
+      "grupo": "TJSP",
+      "variavel": "n_decisoes",
+      "teste": "Shapiro-Wilk",
+      "n": 198,
+      "estatistica": 0.750989,
+      "p": 5.517697e-17,
+      "normal": "não"
+    },
+    {
+      "grupo": "TJSP",
+      "variavel": "taxa_exito",
+      "teste": "Shapiro-Wilk",
+      "n": 198,
+      "estatistica": 0.989961,
+      "p": 0.181732,
+      "normal": "sim"
+    },
+    {
+      "grupo": "TJSP",
+      "variavel": "ementa_mediana",
+      "teste": "Shapiro-Wilk",
+      "n": 198,
+      "estatistica": 0.604748,
+      "p": 4.156527e-21,
+      "normal": "não"
+    },
+    {
+      "grupo": "TJES",
+      "variavel": "n_decisoes",
+      "teste": "Shapiro-Wilk",
+      "n": 40,
+      "estatistica": 0.896761,
+      "p": 0.001541,
+      "normal": "não"
+    },
+    {
+      "grupo": "TJES",
+      "variavel": "taxa_exito",
+      "teste": "Shapiro-Wilk",
+      "n": 40,
+      "estatistica": 0.946323,
+      "p": 0.05671,
+      "normal": "sim"
+    },
+    {
+      "grupo": "TJES",
+      "variavel": "ementa_mediana",
+      "teste": "Shapiro-Wilk",
+      "n": 40,
+      "estatistica": 0.920355,
+      "p": 0.007902,
+      "normal": "não"
+    },
+    {
+      "grupo": "TJPA",
+      "variavel": "n_decisoes",
+      "teste": "Shapiro-Wilk",
+      "n": 36,
+      "estatistica": 0.921874,
+      "p": 0.014294,
+      "normal": "não"
+    },
+    {
+      "grupo": "TJPA",
+      "variavel": "taxa_exito",
+      "teste": "Shapiro-Wilk",
+      "n": 36,
+      "estatistica": 0.964803,
+      "p": 0.300892,
+      "normal": "sim"
+    },
+    {
+      "grupo": "TJPA",
+      "variavel": "ementa_mediana",
+      "teste": "Shapiro-Wilk",
+      "n": 36,
+      "estatistica": 0.985815,
+      "p": 0.915971,
+      "normal": "sim"
+    },
+    {
+      "grupo": "TJBA",
+      "variavel": "n_decisoes",
+      "teste": "Shapiro-Wilk",
+      "n": 81,
+      "estatistica": 0.941022,
+      "p": 0.001007,
+      "normal": "não"
+    },
+    {
+      "grupo": "TJBA",
+      "variavel": "taxa_exito",
+      "teste": "Shapiro-Wilk",
+      "n": 81,
+      "estatistica": 0.963518,
+      "p": 0.020923,
+      "normal": "não"
+    },
+    {
+      "grupo": "TJBA",
+      "variavel": "ementa_mediana",
+      "teste": "Shapiro-Wilk",
+      "n": 81,
+      "estatistica": 0.808631,
+      "p": 7.178531e-09,
+      "normal": "não"
+    }
+  ],
+  "correlacao_relator": [
+    {
+      "grupo": "Total",
+      "par": "Carga × Taxa de êxito",
+      "n": 355,
+      "pearson_r": -0.018265,
+      "p_r": 0.73164,
+      "spearman_rho": -0.073135,
+      "p_rho": 0.169147
+    },
+    {
+      "grupo": "Total",
+      "par": "Carga × Ementa (mediana)",
+      "n": 355,
+      "pearson_r": 0.420312,
+      "p_r": 1.253577e-16,
+      "spearman_rho": 0.531378,
+      "p_rho": 2.927732e-27
+    },
+    {
+      "grupo": "Total",
+      "par": "% modelo CNJ × Ementa (mediana)",
+      "n": 355,
+      "pearson_r": 0.629935,
+      "p_r": 1.190304e-40,
+      "spearman_rho": 0.764739,
+      "p_rho": 2.296223e-69
+    },
+    {
+      "grupo": "Total",
+      "par": "% modelo CNJ × Taxa de êxito",
+      "n": 355,
+      "pearson_r": -0.201846,
+      "p_r": 0.000129,
+      "spearman_rho": -0.202697,
+      "p_rho": 0.00012
+    },
+    {
+      "grupo": "Total",
+      "par": "Tramitação (mediana) × Taxa de êxito",
+      "n": 355,
+      "pearson_r": 0.068515,
+      "p_r": 0.197788,
+      "spearman_rho": 0.004265,
+      "p_rho": 0.936172
+    },
+    {
+      "grupo": "Total",
+      "par": "Ementa (mediana) × Taxa de êxito",
+      "n": 355,
+      "pearson_r": -0.210255,
+      "p_r": 0.000065,
+      "spearman_rho": -0.242392,
+      "p_rho": 3.837513e-06
+    },
+    {
+      "grupo": "Total",
+      "par": "% criminal × Taxa de êxito",
+      "n": 355,
+      "pearson_r": -0.287414,
+      "p_r": 3.528842e-08,
+      "spearman_rho": -0.265909,
+      "p_rho": 3.690746e-07
+    },
+    {
+      "grupo": "TJSP",
+      "par": "Carga × Taxa de êxito",
+      "n": 198,
+      "pearson_r": -0.124606,
+      "p_r": 0.080277,
+      "spearman_rho": 0.052767,
+      "p_rho": 0.460325
+    },
+    {
+      "grupo": "TJSP",
+      "par": "Carga × Ementa (mediana)",
+      "n": 198,
+      "pearson_r": -0.161682,
+      "p_r": 0.022866,
+      "spearman_rho": -0.191226,
+      "p_rho": 0.006961
+    },
+    {
+      "grupo": "TJSP",
+      "par": "% modelo CNJ × Ementa (mediana)",
+      "n": 198,
+      "pearson_r": 0.473643,
+      "p_r": 1.821679e-12,
+      "spearman_rho": 0.644245,
+      "p_rho": 1.320417e-24
+    },
+    {
+      "grupo": "TJSP",
+      "par": "% modelo CNJ × Taxa de êxito",
+      "n": 198,
+      "pearson_r": -0.144431,
+      "p_r": 0.042345,
+      "spearman_rho": -0.18831,
+      "p_rho": 0.007889
+    },
+    {
+      "grupo": "TJSP",
+      "par": "Tramitação (mediana) × Taxa de êxito",
+      "n": 198,
+      "pearson_r": 0.227786,
+      "p_r": 0.001249,
+      "spearman_rho": 0.051604,
+      "p_rho": 0.470285
+    },
+    {
+      "grupo": "TJSP",
+      "par": "Ementa (mediana) × Taxa de êxito",
+      "n": 198,
+      "pearson_r": -0.1189,
+      "p_r": 0.095237,
+      "spearman_rho": -0.141077,
+      "p_rho": 0.047425
+    },
+    {
+      "grupo": "TJSP",
+      "par": "% criminal × Taxa de êxito",
+      "n": 198,
+      "pearson_r": -0.234798,
+      "p_r": 0.00087,
+      "spearman_rho": -0.242439,
+      "p_rho": 0.000579
+    },
+    {
+      "grupo": "TJES",
+      "par": "Carga × Taxa de êxito",
+      "n": 40,
+      "pearson_r": 0.040722,
+      "p_r": 0.802987,
+      "spearman_rho": -0.03002,
+      "p_rho": 0.854104
+    },
+    {
+      "grupo": "TJES",
+      "par": "Carga × Ementa (mediana)",
+      "n": 40,
+      "pearson_r": 0.029389,
+      "p_r": 0.857137,
+      "spearman_rho": -0.062573,
+      "p_rho": 0.701293
+    },
+    {
+      "grupo": "TJES",
+      "par": "% modelo CNJ × Ementa (mediana)",
+      "n": 40,
+      "pearson_r": 0.830239,
+      "p_r": 3.465766e-11,
+      "spearman_rho": 0.785728,
+      "p_rho": 1.906569e-09
+    },
+    {
+      "grupo": "TJES",
+      "par": "% modelo CNJ × Taxa de êxito",
+      "n": 40,
+      "pearson_r": 0.067458,
+      "p_r": 0.679179,
+      "spearman_rho": 0.034742,
+      "p_rho": 0.831465
+    },
+    {
+      "grupo": "TJES",
+      "par": "Tramitação (mediana) × Taxa de êxito",
+      "n": 40,
+      "pearson_r": 0.284458,
+      "p_r": 0.075244,
+      "spearman_rho": 0.473676,
+      "p_rho": 0.00202
+    },
+    {
+      "grupo": "TJES",
+      "par": "Ementa (mediana) × Taxa de êxito",
+      "n": 40,
+      "pearson_r": 0.051581,
+      "p_r": 0.751933,
+      "spearman_rho": -0.096811,
+      "p_rho": 0.552334
+    },
+    {
+      "grupo": "TJES",
+      "par": "% criminal × Taxa de êxito",
+      "n": 40,
+      "pearson_r": -0.542149,
+      "p_r": 0.000302,
+      "spearman_rho": -0.496448,
+      "p_rho": 0.001121
+    },
+    {
+      "grupo": "TJPA",
+      "par": "Carga × Taxa de êxito",
+      "n": 36,
+      "pearson_r": 0.238482,
+      "p_r": 0.161305,
+      "spearman_rho": 0.204118,
+      "p_rho": 0.232435
+    },
+    {
+      "grupo": "TJPA",
+      "par": "Carga × Ementa (mediana)",
+      "n": 36,
+      "pearson_r": 0.09887,
+      "p_r": 0.566177,
+      "spearman_rho": 0.140807,
+      "p_rho": 0.412719
+    },
+    {
+      "grupo": "TJPA",
+      "par": "% modelo CNJ × Ementa (mediana)",
+      "n": 36,
+      "pearson_r": 0.435092,
+      "p_r": 0.008002,
+      "spearman_rho": 0.251033,
+      "p_rho": 0.139728
+    },
+    {
+      "grupo": "TJPA",
+      "par": "% modelo CNJ × Taxa de êxito",
+      "n": 36,
+      "pearson_r": -0.082173,
+      "p_r": 0.633758,
+      "spearman_rho": -0.022444,
+      "p_rho": 0.896622
+    },
+    {
+      "grupo": "TJPA",
+      "par": "Tramitação (mediana) × Taxa de êxito",
+      "n": 36,
+      "pearson_r": -0.17914,
+      "p_r": 0.295841,
+      "spearman_rho": -0.156182,
+      "p_rho": 0.363023
+    },
+    {
+      "grupo": "TJPA",
+      "par": "Ementa (mediana) × Taxa de êxito",
+      "n": 36,
+      "pearson_r": 0.109653,
+      "p_r": 0.524371,
+      "spearman_rho": 0.163717,
+      "p_rho": 0.340036
+    },
+    {
+      "grupo": "TJPA",
+      "par": "% criminal × Taxa de êxito",
+      "n": 36,
+      "pearson_r": 0.208563,
+      "p_r": 0.222202,
+      "spearman_rho": 0.205405,
+      "p_rho": 0.229439
+    },
+    {
+      "grupo": "TJBA",
+      "par": "Carga × Taxa de êxito",
+      "n": 81,
+      "pearson_r": 0.262775,
+      "p_r": 0.017787,
+      "spearman_rho": 0.316275,
+      "p_rho": 0.004022
+    },
+    {
+      "grupo": "TJBA",
+      "par": "Carga × Ementa (mediana)",
+      "n": 81,
+      "pearson_r": -0.232755,
+      "p_r": 0.036524,
+      "spearman_rho": -0.232501,
+      "p_rho": 0.036734
+    },
+    {
+      "grupo": "TJBA",
+      "par": "% modelo CNJ × Ementa (mediana)",
+      "n": 81,
+      "pearson_r": 0.273713,
+      "p_r": 0.013416,
+      "spearman_rho": 0.452914,
+      "p_rho": 0.000022
+    },
+    {
+      "grupo": "TJBA",
+      "par": "% modelo CNJ × Taxa de êxito",
+      "n": 81,
+      "pearson_r": -0.110965,
+      "p_r": 0.32403,
+      "spearman_rho": -0.055828,
+      "p_rho": 0.620581
+    },
+    {
+      "grupo": "TJBA",
+      "par": "Tramitação (mediana) × Taxa de êxito",
+      "n": 81,
+      "pearson_r": 0.308191,
+      "p_r": 0.005125,
+      "spearman_rho": 0.422216,
+      "p_rho": 0.000086
+    },
+    {
+      "grupo": "TJBA",
+      "par": "Ementa (mediana) × Taxa de êxito",
+      "n": 81,
+      "pearson_r": -0.354689,
+      "p_r": 0.001159,
+      "spearman_rho": -0.418666,
+      "p_rho": 0.0001
+    },
+    {
+      "grupo": "TJBA",
+      "par": "% criminal × Taxa de êxito",
+      "n": 81,
+      "pearson_r": -0.521593,
+      "p_r": 5.94117e-07,
+      "spearman_rho": -0.542004,
+      "p_rho": 1.734212e-07
+    }
+  ],
+  "orgaos": {
+    "TJSP": {
+      "n_orgaos": 85,
+      "mediana": 38.157895,
+      "maior": [
+        {
+          "orgao": "35a Câmara de Direito Privado",
+          "taxa_exito": 62.837838,
+          "n_merito": 148
+        }
+      ],
+      "menor": [
+        {
+          "orgao": "Câmara Especial de Presidentes",
+          "taxa_exito": 0,
+          "n_merito": 234
+        }
+      ]
+    },
+    "TJES": {
+      "n_orgaos": 12,
+      "mediana": 28.401349,
+      "maior": [
+        {
+          "orgao": "2ª Câmara Cível",
+          "taxa_exito": 42.59921,
+          "n_merito": 5317
+        }
+      ],
+      "menor": [
+        {
+          "orgao": "Tribunal Pleno",
+          "taxa_exito": 5.976096,
+          "n_merito": 251
+        }
+      ]
+    },
+    "TJPA": {
+      "n_orgaos": 14,
+      "mediana": 29.676398,
+      "maior": [
+        {
+          "orgao": "3ª Turma de Direito Privado",
+          "taxa_exito": 43.648649,
+          "n_merito": 740
+        }
+      ],
+      "menor": [
+        {
+          "orgao": "Tribunal Pleno",
+          "taxa_exito": 8.374384,
+          "n_merito": 203
+        }
+      ]
+    },
+    "TJBA": {
+      "n_orgaos": 26,
+      "mediana": 27.608975,
+      "maior": [
+        {
+          "orgao": "SEÇÃO CÍVEL DE DIREITO PÚBLICO",
+          "taxa_exito": 65.814421,
+          "n_merito": 3481
+        }
+      ],
+      "menor": [
+        {
+          "orgao": "ÓRGÃO ESPECIAL",
+          "taxa_exito": 4.892254,
+          "n_merito": 1717
+        }
+      ]
+    }
+  },
+  "associacao_resultado": [
+    {
+      "grupo": "Total",
+      "variavel": "tribunal",
+      "categorias": 4,
+      "chi2": 723.479639,
+      "gl": 6,
+      "p": 5.206624e-153,
+      "n": 153559,
+      "cramer_v": 0.048536
+    },
+    {
+      "grupo": "Total",
+      "variavel": "classe_grupo",
+      "categorias": 11,
+      "chi2": 9882.376372,
+      "gl": 20,
+      "p": 0,
+      "n": 153559,
+      "cramer_v": 0.179382
+    },
+    {
+      "grupo": "Total",
+      "variavel": "materia",
+      "categorias": 2,
+      "chi2": 1337.193983,
+      "gl": 2,
+      "p": 4.285644e-291,
+      "n": 153559,
+      "cramer_v": 0.093317
+    },
+    {
+      "grupo": "Total",
+      "variavel": "modelo_cnj",
+      "categorias": 2,
+      "chi2": 304.511442,
+      "gl": 2,
+      "p": 7.519355e-67,
+      "n": 153559,
+      "cramer_v": 0.044531
+    },
+    {
+      "grupo": "Total",
+      "variavel": "origem",
+      "categorias": 2,
+      "chi2": 3152.765993,
+      "gl": 2,
+      "p": 0,
+      "n": 153553,
+      "cramer_v": 0.14329
+    },
+    {
+      "grupo": "Total",
+      "variavel": "assunto",
+      "categorias": 322,
+      "chi2": 6964.485851,
+      "gl": 642,
+      "p": 0,
+      "n": 73694,
+      "cramer_v": 0.217377
+    },
+    {
+      "grupo": "Total",
+      "variavel": "comarca",
+      "categorias": 413,
+      "chi2": 4496.096993,
+      "gl": 824,
+      "p": 0,
+      "n": 105112,
+      "cramer_v": 0.146244
+    },
+    {
+      "grupo": "TJSP",
+      "variavel": "classe_grupo",
+      "categorias": 11,
+      "chi2": 1137.851384,
+      "gl": 20,
+      "p": 1.449977e-228,
+      "n": 17285,
+      "cramer_v": 0.181423
+    },
+    {
+      "grupo": "TJSP",
+      "variavel": "modelo_cnj",
+      "categorias": 2,
+      "chi2": 4.70533,
+      "gl": 2,
+      "p": 0.095115,
+      "n": 17285,
+      "cramer_v": 0.016499
+    },
+    {
+      "grupo": "TJSP",
+      "variavel": "orgao",
+      "categorias": 85,
+      "chi2": 1224.191587,
+      "gl": 168,
+      "p": 8.774785e-160,
+      "n": 16499,
+      "cramer_v": 0.192611
+    },
+    {
+      "grupo": "TJSP",
+      "variavel": "assunto",
+      "categorias": 100,
+      "chi2": 1348.393252,
+      "gl": 198,
+      "p": 3.272877e-170,
+      "n": 14911,
+      "cramer_v": 0.212638
+    },
+    {
+      "grupo": "TJSP",
+      "variavel": "comarca",
+      "categorias": 93,
+      "chi2": 607.009975,
+      "gl": 184,
+      "p": 1.228871e-46,
+      "n": 9263,
+      "cramer_v": 0.181012
+    },
+    {
+      "grupo": "TJES",
+      "variavel": "classe_grupo",
+      "categorias": 9,
+      "chi2": 2618.948016,
+      "gl": 16,
+      "p": 0,
+      "n": 33924,
+      "cramer_v": 0.196469
+    },
+    {
+      "grupo": "TJES",
+      "variavel": "modelo_cnj",
+      "categorias": 2,
+      "chi2": 69.029972,
+      "gl": 2,
+      "p": 1.024075e-15,
+      "n": 33924,
+      "cramer_v": 0.045109
+    },
+    {
+      "grupo": "TJES",
+      "variavel": "orgao",
+      "categorias": 12,
+      "chi2": 1060.596456,
+      "gl": 22,
+      "p": 2.443973e-210,
+      "n": 33921,
+      "cramer_v": 0.125033
+    },
+    {
+      "grupo": "TJES",
+      "variavel": "assunto",
+      "categorias": 157,
+      "chi2": 3885.176591,
+      "gl": 312,
+      "p": 0,
+      "n": 28457,
+      "cramer_v": 0.261274
+    },
+    {
+      "grupo": "TJES",
+      "variavel": "comarca",
+      "categorias": 64,
+      "chi2": 686.721247,
+      "gl": 126,
+      "p": 4.843507e-78,
+      "n": 23009,
+      "cramer_v": 0.122159
+    },
+    {
+      "grupo": "TJPA",
+      "variavel": "classe_grupo",
+      "categorias": 11,
+      "chi2": 1818.148904,
+      "gl": 20,
+      "p": 0,
+      "n": 29926,
+      "cramer_v": 0.174291
+    },
+    {
+      "grupo": "TJPA",
+      "variavel": "modelo_cnj",
+      "categorias": 2,
+      "chi2": 43.07129,
+      "gl": 2,
+      "p": 4.438009e-10,
+      "n": 29926,
+      "cramer_v": 0.037938
+    },
+    {
+      "grupo": "TJPA",
+      "variavel": "orgao",
+      "categorias": 14,
+      "chi2": 1432.175904,
+      "gl": 26,
+      "p": 3.922314e-286,
+      "n": 29926,
+      "cramer_v": 0.154689
+    },
+    {
+      "grupo": "TJPA",
+      "variavel": "assunto",
+      "categorias": 148,
+      "chi2": 2317.054363,
+      "gl": 294,
+      "p": 1.502271e-310,
+      "n": 25177,
+      "cramer_v": 0.214512
+    },
+    {
+      "grupo": "TJPA",
+      "variavel": "comarca",
+      "categorias": 107,
+      "chi2": 1004.501018,
+      "gl": 212,
+      "p": 3.464174e-103,
+      "n": 23265,
+      "cramer_v": 0.146929
+    },
+    {
+      "grupo": "TJBA",
+      "variavel": "classe_grupo",
+      "categorias": 9,
+      "chi2": 4754.0384,
+      "gl": 16,
+      "p": 0,
+      "n": 72424,
+      "cramer_v": 0.181165
+    },
+    {
+      "grupo": "TJBA",
+      "variavel": "modelo_cnj",
+      "categorias": 2,
+      "chi2": 118.029289,
+      "gl": 2,
+      "p": 2.345662e-26,
+      "n": 72424,
+      "cramer_v": 0.04037
+    },
+    {
+      "grupo": "TJBA",
+      "variavel": "orgao",
+      "categorias": 26,
+      "chi2": 5349.527428,
+      "gl": 50,
+      "p": 0,
+      "n": 72033,
+      "cramer_v": 0.192698
+    },
+    {
+      "grupo": "TJBA",
+      "variavel": "comarca",
+      "categorias": 149,
+      "chi2": 1843.43606,
+      "gl": 296,
+      "p": 2.171992e-221,
+      "n": 49575,
+      "cramer_v": 0.136354
+    }
+  ],
+  "tramitacao_longa": {
+    "anos": 5,
+    "n": 105184,
+    "pct_total": 41.852373,
+    "pct_por_tribunal": {
+      "TJSP": 16.399067,
+      "TJES": 42.466641,
+      "TJPA": 50.350568,
+      "TJBA": 45.32324
+    },
+    "pct_por_materia": [
+      {
+        "Cível": 17.293957,
+        "Criminal": 11.121628,
+        "_row": "TJSP"
+      },
+      {
+        "Cível": 47.169018,
+        "Criminal": 30.421409,
+        "_row": "TJES"
+      },
+      {
+        "Cível": 53.051853,
+        "Criminal": 45.487945,
+        "_row": "TJPA"
+      },
+      {
+        "Cível": 46.41093,
+        "Criminal": 37.05036,
+        "_row": "TJBA"
+      }
+    ],
+    "pct_por_classe": [
+      {
+        "classe_grupo": "Agravo de execução penal",
+        "n": 1071,
+        "pct": 0.093371
+      },
+      {
+        "classe_grupo": "Agravo de instrumento",
+        "n": 240,
+        "pct": 5
+      },
+      {
+        "classe_grupo": "Agravo interno",
+        "n": 397,
+        "pct": 45.088161
+      },
+      {
+        "classe_grupo": "Apelação criminal",
+        "n": 18243,
+        "pct": 36.940196
+      },
+      {
+        "classe_grupo": "Apelação cível",
+        "n": 79317,
+        "pct": 44.009481
+      },
+      {
+        "classe_grupo": "Embargos de declaração",
+        "n": 1563,
+        "pct": 26.039667
+      },
+      {
+        "classe_grupo": "Habeas corpus",
+        "n": 45,
+        "pct": 0
+      },
+      {
+        "classe_grupo": "Mandado de segurança",
+        "n": 117,
+        "pct": 18.803419
+      },
+      {
+        "classe_grupo": "Outras",
+        "n": 253,
+        "pct": 35.968379
+      },
+      {
+        "classe_grupo": "Recurso em sentido estrito",
+        "n": 2535,
+        "pct": 42.840237
+      },
+      {
+        "classe_grupo": "Remessa necessária",
+        "n": 1403,
+        "pct": 41.197434
+      }
+    ]
+  },
+  "comarcas": {
+    "TJSP": {
+      "n_comarcas": 102,
+      "tempo_mediana_min": 0,
+      "tempo_mediana_max": 5,
+      "tempo_mediana_q1": 1,
+      "tempo_mediana_q3": 2,
+      "pct_longa_min": 0,
+      "pct_longa_max": 71.794872
+    },
+    "TJES": {
+      "n_comarcas": 65,
+      "tempo_mediana_min": 0,
+      "tempo_mediana_max": 8,
+      "tempo_mediana_q1": 3,
+      "tempo_mediana_q3": 5,
+      "pct_longa_min": 1.098901,
+      "pct_longa_max": 86
+    },
+    "TJPA": {
+      "n_comarcas": 109,
+      "tempo_mediana_min": 1,
+      "tempo_mediana_max": 9,
+      "tempo_mediana_q1": 4,
+      "tempo_mediana_q3": 5.5,
+      "pct_longa_min": 10,
+      "pct_longa_max": 89.583333
+    },
+    "TJBA": {
+      "n_comarcas": 146,
+      "tempo_mediana_min": 0,
+      "tempo_mediana_max": 15,
+      "tempo_mediana_q1": 4,
+      "tempo_mediana_q3": 6,
+      "pct_longa_min": 0,
+      "pct_longa_max": 98.214286
+    }
+  },
+  "comarcas_total": {
+    "n": 422,
+    "n_total": 888
+  },
+  "correlacao_comarca": [
+    {
+      "grupo": "Total",
+      "par": "Processos da comarca × Tramitação (mediana)",
+      "n": 422,
+      "pearson_r": -0.015685,
+      "p_r": 0.748001,
+      "spearman_rho": -0.020697,
+      "p_rho": 0.671606
+    },
+    {
+      "grupo": "Total",
+      "par": "Processos da comarca × % longa",
+      "n": 422,
+      "pearson_r": 0.020712,
+      "p_r": 0.671372,
+      "spearman_rho": -0.021777,
+      "p_rho": 0.655543
+    },
+    {
+      "grupo": "Total",
+      "par": "% longa × Taxa de êxito",
+      "n": 422,
+      "pearson_r": -0.057101,
+      "p_r": 0.241811,
+      "spearman_rho": -0.064154,
+      "p_rho": 0.188398
+    },
+    {
+      "grupo": "TJSP",
+      "par": "Processos da comarca × Tramitação (mediana)",
+      "n": 102,
+      "pearson_r": -0.006313,
+      "p_r": 0.949786,
+      "spearman_rho": -0.094014,
+      "p_rho": 0.34728
+    },
+    {
+      "grupo": "TJSP",
+      "par": "Processos da comarca × % longa",
+      "n": 102,
+      "pearson_r": -0.017553,
+      "p_r": 0.861,
+      "spearman_rho": -0.075402,
+      "p_rho": 0.451322
+    },
+    {
+      "grupo": "TJSP",
+      "par": "% longa × Taxa de êxito",
+      "n": 102,
+      "pearson_r": -0.219272,
+      "p_r": 0.02681,
+      "spearman_rho": -0.131899,
+      "p_rho": 0.186341
+    },
+    {
+      "grupo": "TJES",
+      "par": "Processos da comarca × Tramitação (mediana)",
+      "n": 65,
+      "pearson_r": -0.05367,
+      "p_r": 0.671122,
+      "spearman_rho": -0.348644,
+      "p_rho": 0.004424
+    },
+    {
+      "grupo": "TJES",
+      "par": "Processos da comarca × % longa",
+      "n": 65,
+      "pearson_r": -0.010583,
+      "p_r": 0.933321,
+      "spearman_rho": -0.350796,
+      "p_rho": 0.00417
+    },
+    {
+      "grupo": "TJES",
+      "par": "% longa × Taxa de êxito",
+      "n": 65,
+      "pearson_r": 0.181792,
+      "p_r": 0.147248,
+      "spearman_rho": 0.232564,
+      "p_rho": 0.062285
+    },
+    {
+      "grupo": "TJPA",
+      "par": "Processos da comarca × Tramitação (mediana)",
+      "n": 109,
+      "pearson_r": 0.045206,
+      "p_r": 0.640673,
+      "spearman_rho": 0.069058,
+      "p_rho": 0.47552
+    },
+    {
+      "grupo": "TJPA",
+      "par": "Processos da comarca × % longa",
+      "n": 109,
+      "pearson_r": 0.051272,
+      "p_r": 0.596479,
+      "spearman_rho": 0.046829,
+      "p_rho": 0.62871
+    },
+    {
+      "grupo": "TJPA",
+      "par": "% longa × Taxa de êxito",
+      "n": 109,
+      "pearson_r": -0.054558,
+      "p_r": 0.573125,
+      "spearman_rho": -0.025453,
+      "p_rho": 0.79277
+    },
+    {
+      "grupo": "TJBA",
+      "par": "Processos da comarca × Tramitação (mediana)",
+      "n": 146,
+      "pearson_r": -0.100738,
+      "p_r": 0.226343,
+      "spearman_rho": -0.253585,
+      "p_rho": 0.002013
+    },
+    {
+      "grupo": "TJBA",
+      "par": "Processos da comarca × % longa",
+      "n": 146,
+      "pearson_r": -0.05882,
+      "p_r": 0.480669,
+      "spearman_rho": -0.227014,
+      "p_rho": 0.00586
+    },
+    {
+      "grupo": "TJBA",
+      "par": "% longa × Taxa de êxito",
+      "n": 146,
+      "pearson_r": -0.029987,
+      "p_r": 0.719373,
+      "spearman_rho": -0.00953,
+      "p_rho": 0.909104
+    }
+  ],
+  "normalidade_comarca": [
+    {
+      "grupo": "Total",
+      "variavel": "tempo_mediana",
+      "teste": "Shapiro-Wilk",
+      "n": 422,
+      "estatistica": 0.946748,
+      "p": 3.528902e-11,
+      "normal": "não"
+    },
+    {
+      "grupo": "Total",
+      "variavel": "pct_longa",
+      "teste": "Shapiro-Wilk",
+      "n": 422,
+      "estatistica": 0.979834,
+      "p": 0.000013,
+      "normal": "não"
+    },
+    {
+      "grupo": "Total",
+      "variavel": "n",
+      "teste": "Shapiro-Wilk",
+      "n": 422,
+      "estatistica": 0.151891,
+      "p": 1.231551e-39,
+      "normal": "não"
+    },
+    {
+      "grupo": "TJSP",
+      "variavel": "tempo_mediana",
+      "teste": "Shapiro-Wilk",
+      "n": 102,
+      "estatistica": 0.854621,
+      "p": 1.38232e-08,
+      "normal": "não"
+    },
+    {
+      "grupo": "TJSP",
+      "variavel": "pct_longa",
+      "teste": "Shapiro-Wilk",
+      "n": 102,
+      "estatistica": 0.90376,
+      "p": 1.745056e-06,
+      "normal": "não"
+    },
+    {
+      "grupo": "TJSP",
+      "variavel": "n",
+      "teste": "Shapiro-Wilk",
+      "n": 102,
+      "estatistica": 0.398857,
+      "p": 1.545199e-18,
+      "normal": "não"
+    },
+    {
+      "grupo": "TJES",
+      "variavel": "tempo_mediana",
+      "teste": "Shapiro-Wilk",
+      "n": 65,
+      "estatistica": 0.934681,
+      "p": 0.001969,
+      "normal": "não"
+    },
+    {
+      "grupo": "TJES",
+      "variavel": "pct_longa",
+      "teste": "Shapiro-Wilk",
+      "n": 65,
+      "estatistica": 0.989113,
+      "p": 0.840521,
+      "normal": "sim"
+    },
+    {
+      "grupo": "TJES",
+      "variavel": "n",
+      "teste": "Shapiro-Wilk",
+      "n": 65,
+      "estatistica": 0.429352,
+      "p": 1.772356e-14,
+      "normal": "não"
+    },
+    {
+      "grupo": "TJPA",
+      "variavel": "tempo_mediana",
+      "teste": "Shapiro-Wilk",
+      "n": 109,
+      "estatistica": 0.962827,
+      "p": 0.003905,
+      "normal": "não"
+    },
+    {
+      "grupo": "TJPA",
+      "variavel": "pct_longa",
+      "teste": "Shapiro-Wilk",
+      "n": 109,
+      "estatistica": 0.973856,
+      "p": 0.030346,
+      "normal": "não"
+    },
+    {
+      "grupo": "TJPA",
+      "variavel": "n",
+      "teste": "Shapiro-Wilk",
+      "n": 109,
+      "estatistica": 0.27388,
+      "p": 8.120553e-21,
+      "normal": "não"
+    },
+    {
+      "grupo": "TJBA",
+      "variavel": "tempo_mediana",
+      "teste": "Shapiro-Wilk",
+      "n": 146,
+      "estatistica": 0.927582,
+      "p": 9.091517e-07,
+      "normal": "não"
+    },
+    {
+      "grupo": "TJBA",
+      "variavel": "pct_longa",
+      "teste": "Shapiro-Wilk",
+      "n": 146,
+      "estatistica": 0.989707,
+      "p": 0.360947,
+      "normal": "sim"
+    },
+    {
+      "grupo": "TJBA",
+      "variavel": "n",
+      "teste": "Shapiro-Wilk",
+      "n": 146,
+      "estatistica": 0.117737,
+      "p": 8.82369e-26,
+      "normal": "não"
+    }
+  ],
+  "assuntos": {
+    "TJSP": [
+      {
+        "assunto": "BANCÁRIOS",
+        "n": 1822,
+        "tempo_mediana": 1,
+        "pct_longa": 2.305159
+      },
+      {
+        "assunto": "IPTU/ IMPOSTO PREDIAL E TERRITORIAL URBANO",
+        "n": 938,
+        "tempo_mediana": 3,
+        "pct_longa": 33.36887
+      },
+      {
+        "assunto": "PRESTAÇÃO DE SERVIÇOS",
+        "n": 510,
+        "tempo_mediana": 2,
+        "pct_longa": 11.176471
+      },
+      {
+        "assunto": "TRÁFICO DE DROGAS E CONDUTAS AFINS",
+        "n": 423,
+        "tempo_mediana": 1,
+        "pct_longa": 6.382979
+      },
+      {
+        "assunto": "AUXÍLIO-ACIDENTE (ART. 86)",
+        "n": 421,
+        "tempo_mediana": 2,
+        "pct_longa": 12.351544
+      },
+      {
+        "assunto": "FORNECIMENTO DE ENERGIA ELÉTRICA",
+        "n": 408,
+        "tempo_mediana": 1,
+        "pct_longa": 2.941176
+      },
+      {
+        "assunto": "COMPRA E VENDA",
+        "n": 389,
+        "tempo_mediana": 2,
+        "pct_longa": 11.311054
+      },
+      {
+        "assunto": "ESPÉCIES DE TÍTULOS DE CRÉDITO",
+        "n": 308,
+        "tempo_mediana": 1,
+        "pct_longa": 9.090909
+      },
+      {
+        "assunto": "TELEFONIA",
+        "n": 298,
+        "tempo_mediana": 1,
+        "pct_longa": 1.677852
+      },
+      {
+        "assunto": "MUNICIPAIS",
+        "n": 294,
+        "tempo_mediana": 4,
+        "pct_longa": 47.278912
+      },
+      {
+        "assunto": "ICMS/ IMPOSTO SOBRE CIRCULAÇÃO DE MERCADORIAS",
+        "n": 288,
+        "tempo_mediana": 4,
+        "pct_longa": 48.263889
+      },
+      {
+        "assunto": "LOCAÇÃO DE IMÓVEL",
+        "n": 275,
+        "tempo_mediana": 2,
+        "pct_longa": 14.909091
+      }
+    ],
+    "TJES": [
+      {
+        "assunto": "TRÁFICO DE DROGAS E CONDUTAS AFINS",
+        "n": 1579,
+        "tempo_mediana": 2,
+        "pct_longa": 17.60608
+      },
+      {
+        "assunto": "INDENIZAÇÃO POR DANO MATERIAL",
+        "n": 1485,
+        "tempo_mediana": 4,
+        "pct_longa": 42.828283
+      },
+      {
+        "assunto": "INDENIZAÇÃO POR DANO MORAL",
+        "n": 1130,
+        "tempo_mediana": 4,
+        "pct_longa": 44.778761
+      },
+      {
+        "assunto": "DÍVIDA ATIVA (EXECUÇÃO FISCAL)",
+        "n": 878,
+        "tempo_mediana": 8,
+        "pct_longa": 72.209567
+      },
+      {
+        "assunto": "HOMICÍDIO QUALIFICADO",
+        "n": 689,
+        "tempo_mediana": 3,
+        "pct_longa": 39.332366
+      },
+      {
+        "assunto": "MULTAS E DEMAIS SANÇÕES",
+        "n": 484,
+        "tempo_mediana": 6,
+        "pct_longa": 64.876033
+      },
+      {
+        "assunto": "OBRIGAÇÃO DE FAZER / NÃO FAZER",
+        "n": 452,
+        "tempo_mediana": 5,
+        "pct_longa": 57.079646
+      },
+      {
+        "assunto": "CONTRATOS BANCÁRIOS",
+        "n": 430,
+        "tempo_mediana": 3,
+        "pct_longa": 19.302326
+      },
+      {
+        "assunto": "AMEAÇA",
+        "n": 422,
+        "tempo_mediana": 2,
+        "pct_longa": 15.876777
+      },
+      {
+        "assunto": "BANCÁRIOS",
+        "n": 390,
+        "tempo_mediana": 3,
+        "pct_longa": 18.461538
+      },
+      {
+        "assunto": "ASSOCIAÇÃO PARA A PRODUÇÃO E TRÁFICO E CONDUTAS AFINS",
+        "n": 383,
+        "tempo_mediana": 3,
+        "pct_longa": 26.109661
+      },
+      {
+        "assunto": "CRIME TENTADO",
+        "n": 381,
+        "tempo_mediana": 4,
+        "pct_longa": 41.469816
+      }
+    ],
+    "TJPA": [
+      {
+        "assunto": "ROUBO MAJORADO",
+        "n": 1372,
+        "tempo_mediana": 5,
+        "pct_longa": 52.040816
+      },
+      {
+        "assunto": "OBRIGAÇÃO DE FAZER / NÃO FAZER",
+        "n": 1287,
+        "tempo_mediana": 8,
+        "pct_longa": 76.223776
+      },
+      {
+        "assunto": "TRÁFICO DE DROGAS E CONDUTAS AFINS",
+        "n": 1218,
+        "tempo_mediana": 5,
+        "pct_longa": 59.441708
+      },
+      {
+        "assunto": "HOMICÍDIO QUALIFICADO",
+        "n": 887,
+        "tempo_mediana": 6,
+        "pct_longa": 65.501691
+      },
+      {
+        "assunto": "CONTRATOS BANCÁRIOS",
+        "n": 705,
+        "tempo_mediana": 3,
+        "pct_longa": 34.751773
+      },
+      {
+        "assunto": "CONTRA A MULHER",
+        "n": 629,
+        "tempo_mediana": 3,
+        "pct_longa": 16.852146
+      },
+      {
+        "assunto": "EMPRÉSTIMO CONSIGNADO",
+        "n": 614,
+        "tempo_mediana": 2,
+        "pct_longa": 24.429967
+      },
+      {
+        "assunto": "ROUBO",
+        "n": 577,
+        "tempo_mediana": 4,
+        "pct_longa": 49.046794
+      },
+      {
+        "assunto": "INDENIZAÇÃO POR DANO MATERIAL",
+        "n": 565,
+        "tempo_mediana": 5,
+        "pct_longa": 53.451327
+      },
+      {
+        "assunto": "ABONO PECUNIÁRIO (ART. 78 LEI 8.112/1990)",
+        "n": 526,
+        "tempo_mediana": 5,
+        "pct_longa": 52.661597
+      },
+      {
+        "assunto": "PRÁTICAS ABUSIVAS",
+        "n": 467,
+        "tempo_mediana": 3,
+        "pct_longa": 27.837259
+      },
+      {
+        "assunto": "ALIENAÇÃO FIDUCIÁRIA",
+        "n": 431,
+        "tempo_mediana": 2,
+        "pct_longa": 21.809745
+      }
+    ],
+    "TJBA": [
+      {
+        "assunto": "REEXAME NECESSÁRIO",
+        "n": 177,
+        "tempo_mediana": 6,
+        "pct_longa": 67.231638
+      }
+    ]
+  },
+  "associacao_tempo": [
+    {
+      "grupo": "Total",
+      "variavel": "tribunal",
+      "categorias": 4,
+      "chi2": 4820.378875,
+      "gl": 3,
+      "p": 0,
+      "n": 105184,
+      "cramer_v": 0.214075
+    },
+    {
+      "grupo": "Total",
+      "variavel": "classe_grupo",
+      "categorias": 11,
+      "chi2": 1458.989347,
+      "gl": 10,
+      "p": 1.814473e-307,
+      "n": 105184,
+      "cramer_v": 0.117774
+    },
+    {
+      "grupo": "Total",
+      "variavel": "materia",
+      "categorias": 2,
+      "chi2": 404.421426,
+      "gl": 1,
+      "p": 6.004251e-90,
+      "n": 105184,
+      "cramer_v": 0.062007
+    },
+    {
+      "grupo": "Total",
+      "variavel": "assunto",
+      "categorias": 257,
+      "chi2": 10490.938556,
+      "gl": 256,
+      "p": 0,
+      "n": 56528,
+      "cramer_v": 0.4308
+    },
+    {
+      "grupo": "Total",
+      "variavel": "comarca",
+      "categorias": 422,
+      "chi2": 10187.761147,
+      "gl": 421,
+      "p": 0,
+      "n": 100372,
+      "cramer_v": 0.318591
+    },
+    {
+      "grupo": "TJSP",
+      "variavel": "classe_grupo",
+      "categorias": 7,
+      "chi2": 198.617831,
+      "gl": 6,
+      "p": 3.735754e-40,
+      "n": 14551,
+      "cramer_v": 0.116832
+    },
+    {
+      "grupo": "TJSP",
+      "variavel": "assunto",
+      "categorias": 88,
+      "chi2": 2560.548485,
+      "gl": 87,
+      "p": 0,
+      "n": 12623,
+      "cramer_v": 0.450386
+    },
+    {
+      "grupo": "TJSP",
+      "variavel": "comarca",
+      "categorias": 102,
+      "chi2": 1071.37271,
+      "gl": 101,
+      "p": 6.997759e-162,
+      "n": 11415,
+      "cramer_v": 0.30636
+    },
+    {
+      "grupo": "TJSP",
+      "variavel": "orgao",
+      "categorias": 82,
+      "chi2": 1466.416207,
+      "gl": 81,
+      "p": 4.602568e-253,
+      "n": 13822,
+      "cramer_v": 0.325719
+    },
+    {
+      "grupo": "TJES",
+      "variavel": "classe_grupo",
+      "categorias": 7,
+      "chi2": 705.21578,
+      "gl": 6,
+      "p": 4.574636e-149,
+      "n": 23134,
+      "cramer_v": 0.174597
+    },
+    {
+      "grupo": "TJES",
+      "variavel": "assunto",
+      "categorias": 112,
+      "chi2": 3745.195787,
+      "gl": 111,
+      "p": 0,
+      "n": 19212,
+      "cramer_v": 0.441521
+    },
+    {
+      "grupo": "TJES",
+      "variavel": "comarca",
+      "categorias": 65,
+      "chi2": 1150.630482,
+      "gl": 64,
+      "p": 6.454106e-199,
+      "n": 23021,
+      "cramer_v": 0.223566
+    },
+    {
+      "grupo": "TJES",
+      "variavel": "orgao",
+      "categorias": 9,
+      "chi2": 616.34593,
+      "gl": 8,
+      "p": 7.155645e-128,
+      "n": 23105,
+      "cramer_v": 0.163327
+    },
+    {
+      "grupo": "TJPA",
+      "variavel": "classe_grupo",
+      "categorias": 7,
+      "chi2": 281.076059,
+      "gl": 6,
+      "p": 9.243732e-58,
+      "n": 24343,
+      "cramer_v": 0.107455
+    },
+    {
+      "grupo": "TJPA",
+      "variavel": "assunto",
+      "categorias": 117,
+      "chi2": 4105.762681,
+      "gl": 116,
+      "p": 0,
+      "n": 20801,
+      "cramer_v": 0.444278
+    },
+    {
+      "grupo": "TJPA",
+      "variavel": "comarca",
+      "categorias": 109,
+      "chi2": 1586.114991,
+      "gl": 108,
+      "p": 4.382547e-261,
+      "n": 24020,
+      "cramer_v": 0.256969
+    },
+    {
+      "grupo": "TJPA",
+      "variavel": "orgao",
+      "categorias": 10,
+      "chi2": 296.485894,
+      "gl": 9,
+      "p": 1.452032e-58,
+      "n": 24344,
+      "cramer_v": 0.110359
+    },
+    {
+      "grupo": "TJBA",
+      "variavel": "classe_grupo",
+      "categorias": 8,
+      "chi2": 564.424527,
+      "gl": 7,
+      "p": 1.110415e-117,
+      "n": 43045,
+      "cramer_v": 0.11451
+    },
+    {
+      "grupo": "TJBA",
+      "variavel": "comarca",
+      "categorias": 146,
+      "chi2": 2846.218304,
+      "gl": 145,
+      "p": 0,
+      "n": 41916,
+      "cramer_v": 0.260582
+    },
+    {
+      "grupo": "TJBA",
+      "variavel": "orgao",
+      "categorias": 24,
+      "chi2": 384.191793,
+      "gl": 23,
+      "p": 3.15865e-67,
+      "n": 42866,
+      "cramer_v": 0.094671
+    }
+  ],
+  "volume_mensal": [
+    {
+      "mes": "2025-01",
+      "TJSP": 623,
+      "TJES": 287,
+      "TJPA": 772,
+      "TJBA": 82
+    },
+    {
+      "mes": "2025-02",
+      "TJSP": 1734,
+      "TJES": 3609,
+      "TJPA": 2982,
+      "TJBA": 331
+    },
+    {
+      "mes": "2025-03",
+      "TJSP": 1665,
+      "TJES": 2818,
+      "TJPA": 2939,
+      "TJBA": 338
+    },
+    {
+      "mes": "2025-04",
+      "TJSP": 2902,
+      "TJES": 3242,
+      "TJPA": 2803,
+      "TJBA": 599
+    },
+    {
+      "mes": "2025-05",
+      "TJSP": 1990,
+      "TJES": 3210,
+      "TJPA": 2635,
+      "TJBA": 5141
+    },
+    {
+      "mes": "2025-06",
+      "TJSP": 855,
+      "TJES": 2617,
+      "TJPA": 3686,
+      "TJBA": 10412
+    },
+    {
+      "mes": "2025-07",
+      "TJSP": 2042,
+      "TJES": 3426,
+      "TJPA": 3061,
+      "TJBA": 15718
+    },
+    {
+      "mes": "2025-08",
+      "TJSP": 2017,
+      "TJES": 3489,
+      "TJPA": 2878,
+      "TJBA": 12430
+    },
+    {
+      "mes": "2025-09",
+      "TJSP": 1801,
+      "TJES": 3632,
+      "TJPA": 3949,
+      "TJBA": 13064
+    },
+    {
+      "mes": "2025-10",
+      "TJSP": 3118,
+      "TJES": 4079,
+      "TJPA": 3204,
+      "TJBA": 12759
+    },
+    {
+      "mes": "2025-11",
+      "TJSP": 2228,
+      "TJES": 3630,
+      "TJPA": 3064,
+      "TJBA": 11492
+    },
+    {
+      "mes": "2025-12",
+      "TJSP": 851,
+      "TJES": 3521,
+      "TJPA": 2281,
+      "TJBA": 10638
+    }
+  ]
+}
