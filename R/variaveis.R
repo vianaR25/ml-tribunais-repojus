@@ -13,7 +13,9 @@ CURTO <- c(tempo_tramitacao = "Tramitação", n_palavras_ementa = "Ementa",
 
 # Número único (Res. CNJ 65/2008): NNNNNNN-DD.AAAA.J.TR.OOOO
 # AAAA = ano de ajuizamento; J = segmento (8 = Justiça Estadual);
-# TR = tribunal; OOOO = unidade de origem (0000 = originário do tribunal).
+# TR = tribunal; OOOO = unidade de origem. OOOO = 0000 indica processo autuado
+# no próprio tribunal: ações originárias (HC, MS) e agravos de instrumento, que
+# são recursos, mas recebem número novo no tribunal.
 numeracao_cnj <- function(processo, tr, ano_max) {
   dig <- gsub("\\D", "", processo)
   ok <- !is.na(dig) & nchar(dig) == 20
@@ -28,7 +30,7 @@ numeracao_cnj <- function(processo, tr, ano_max) {
     origem_cod = cod,
     numero_valido = valido,
     dig20 = ok,
-    origem = ifelse(valido, ifelse(cod == "0000", "Originário do tribunal", "Primeiro grau"), NA),
+    origem = ifelse(valido, ifelse(cod == "0000", "Autuado no tribunal", "Primeiro grau"), NA),
     stringsAsFactors = FALSE
   )
 }

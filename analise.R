@@ -61,7 +61,7 @@ executar <- function(cfg = CONFIG, forcar = FALSE) {
   resumo$resultado_janela <- as.data.frame.matrix(prop.table(table(a$tribunal, dplyr::coalesce(a$resultado_janela, "—")), 1) * 100)
   resumo$numeracao_cnj <- list(
     pct_validos = lapply(tp(a$numero_valido, a$tribunal, mean), `*`, 100),
-    pct_originario = lapply(tp(a$origem == "Originário do tribunal", a$tribunal, mean, na.rm = TRUE), `*`, 100),
+    pct_autuado_tribunal = lapply(tp(a$origem == "Autuado no tribunal", a$tribunal, mean, na.rm = TRUE), `*`, 100),
     origem_por_classe = as.data.frame.matrix(prop.table(table(a$classe_grupo, a$origem), 1) * 100))
   resumo$classes <- as.data.frame.matrix(prop.table(table(a$classe_grupo, a$tribunal), 2) * 100)
   resumo$materia <- as.data.frame.matrix(prop.table(table(a$tribunal, a$materia), 1) * 100)
@@ -82,6 +82,12 @@ executar <- function(cfg = CONFIG, forcar = FALSE) {
                      q1 = stats::quantile(tempo_tramitacao, .25), q3 = stats::quantile(tempo_tramitacao, .75),
                      p90 = stats::quantile(tempo_tramitacao, .9), pct_zero = mean(tempo_tramitacao == 0) * 100,
                      .groups = "drop")
+  # Processos autuados no tribunal: quanto são agravos de instrumento (recursos)
+  # e quanto são ações originárias
+  pt <- p[!is.na(p$origem) & p$origem == "Autuado no tribunal", ]
+  resumo$classes_autuado_tribunal <- list(
+    total = as.list(prop.table(table(pt$classe_grupo)) * 100),
+    por_tribunal = as.data.frame.matrix(prop.table(table(pt$tribunal, pt$classe_grupo), 1) * 100))
   resumo$tempo_p90 <- c(Total = stats::quantile(p$tempo_tramitacao, .9, names = FALSE),
                         tp(p$tempo_tramitacao, p$tribunal, stats::quantile, .9))
   resumo$tempo_pct_zero <- c(Total = mean(p$tempo_tramitacao == 0) * 100,
@@ -127,6 +133,13 @@ executar <- function(cfg = CONFIG, forcar = FALSE) {
   corr_rel <- por_grupo(rel, function(d) correlacoes(d, PARES_RELATOR, ROT_RELATOR))
   gravar(corr_rel, "correlacao_relator")
   resumo$correlacao_relator <- corr_rel
+  # Mesmas correlações só entre relatores de pauta cível, para separar o efeito
+  # da composição da pauta (habeas corpus: tempo quase nulo e êxito baixo)
+  rel_civ <- rel[rel$pct_criminal < cfg$max_criminal_civel, ]
+  corr_rel_civ <- por_grupo(rel_civ, function(d) correlacoes(d, PARES_RELATOR[-7], ROT_RELATOR))
+  gravar(corr_rel_civ, "correlacao_relator_civel")
+  resumo$correlacao_relator_civel <- corr_rel_civ
+  resumo$relatores_civeis <- conta(rel_civ$tribunal)
 
   org <- por_orgao(a, cfg$min_categoria)
   gravar(org, "orgaos")

@@ -65,7 +65,7 @@ test_that("numeração única do CNJ", {
          "1001234-56.2019.8.05.0100", "texto qualquer")
   r <- numeracao_cnj(s, rep("26", 5), 2025)
   expect_equal(r$ano_ajuizamento[1:3], c(2019L, 2025L, 2019L))
-  expect_equal(r$origem[1:3], c("Primeiro grau", "Originário do tribunal", "Primeiro grau"))
+  expect_equal(r$origem[1:3], c("Primeiro grau", "Autuado no tribunal", "Primeiro grau"))
   expect_false(r$numero_valido[4])  # código de outro tribunal
   expect_false(r$numero_valido[5])
 })

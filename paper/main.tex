@@ -68,11 +68,11 @@ e entre câmaras. Nenhuma variável quantitativa é normal por decisão nem se
 correlaciona de forma relevante com o resultado, e a associação entre carga do
 relator e tamanho da ementa inverte de sinal entre os tribunais e o agregado,
 um caso de paradoxo de Simpson. O tempo de tramitação, ao contrário, é
-estruturado: 42\% dos processos vindos do primeiro grau chegam ao tribunal com
-cinco anos ou mais, e o assunto ($V = 0{,}43$) e a comarca ($V = 0{,}32$)
-explicam essa demora muito mais do que qualquer variável explica o resultado.
-Por isso, o tempo de tramitação é o alvo proposto para o modelo preditivo da
-etapa seguinte.
+estruturado: 42\% dos processos vindos do primeiro grau são julgados no
+tribunal cinco anos ou mais após o ajuizamento, e o assunto ($V = 0{,}43$) e a
+comarca ($V = 0{,}32$) se associam a essa demora muito mais do que qualquer
+variável se associa ao resultado. Por isso, a tramitação longa é o alvo
+proposto para o modelo preditivo da etapa seguinte.
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -107,10 +107,9 @@ julgamentos e as variáveis que o acompanham; avaliar a normalidade das
 variáveis quantitativas; e medir associações por decisão, por relator e por
 comarca. Ao final, compara-se o quanto as variáveis estruturadas explicam o
 resultado e o quanto explicam o tempo de tramitação, para escolher o alvo da
-etapa preditiva. A Seção~\ref{sec:metodologia} descreve a metodologia; a
-Seção~\ref{sec:resultados} apresenta e discute os resultados; a
-Seção~\ref{sec:ameacas} discute as ameaças à validade; e a
-Seção~\ref{sec:conclusao} conclui o trabalho.
+etapa preditiva. As Seções~\ref{sec:metodologia} a~\ref{sec:conclusao} trazem
+a metodologia, os resultados e sua discussão, as ameaças à validade e a
+conclusão.
 
 \section{Metodologia}\label{sec:metodologia}
 
@@ -126,10 +125,11 @@ Santo (TJES), Pará (TJPA) e Bahia (TJBA).
 
 O recorte compreende todos os acórdãos \emph{julgados em 2025} desses
 tribunais, 207.906 registros, lidos integralmente, e não por amostra. Foram
-removidas 76 cópias exatas (mesmo processo, data e texto) e excluídas 21.182
-decisões das Turmas Recursais do TJES, que pertencem aos juizados especiais,
-não existem nos demais tribunais e, em três quartos dos casos, trazem apenas o
-texto ``Voto servindo como ementa''. A base analítica tem 186.644 acórdãos:
+removidas 76 cópias exatas (mesmo processo, data e texto) e excluídas 21.186
+decisões dos juizados especiais: 21.182 das Turmas Recursais do TJES, que não
+existem nos demais tribunais e, em três quartos dos casos, trazem apenas o
+texto ``Voto servindo como ementa'', e quatro recursos inominados do TJPA e do
+TJBA. A base analítica tem 186.644 acórdãos:
 21.826 do TJSP, 37.560 do TJES, 34.254 do TJPA e 93.004 do TJBA. A base contém
 só decisões colegiadas; as 203 decisões monocráticas do TJSP disponíveis no
 RepoJus para 2025 não entram na análise, e nenhuma delas coincide em processo e
@@ -163,14 +163,15 @@ As variáveis quantitativas são o \emph{tempo de tramitação}, em anos inteiro
 igual ao ano do julgamento menos o ano de ajuizamento registrado no número
 único (campo AAAA de NNNNNNN-DD.AAAA.J.TR.OOOO); o \emph{tamanho da ementa}, em
 palavras, após a limpeza; e a \emph{carga do relator}, número de acórdãos do
-mesmo relator julgados em 2025 na base. O tempo é uma característica do
-processo, e não da decisão: como um processo pode ter mais de um acórdão no ano
-(o recurso e os embargos de declaração, por exemplo), sua distribuição foi
-calculada uma vez por processo, sobre 153.168 processos. O número único
-fornece ainda a \emph{origem}: OOOO igual a 0000 indica ação originária do
-tribunal; os demais códigos identificam a \emph{comarca} de primeiro grau. Nos
+mesmo relator julgados em 2025 na base. Como um processo pode ter mais de um
+acórdão no ano (o recurso e os embargos de declaração, por exemplo), o tempo
+foi calculado uma vez por processo, sobre 153.168 processos. O número único
+fornece ainda a \emph{origem}: OOOO igual a 0000 indica processo autuado no
+próprio tribunal, seja ação originária, seja agravo de instrumento (recurso que
+recebe número novo no tribunal); os demais códigos identificam a
+\emph{comarca} de primeiro grau. Nos
 105.184 processos vindos do primeiro grau, define-se a \emph{tramitação longa}:
-cinco anos ou mais entre o ajuizamento e o julgamento. As variáveis
+cinco anos ou mais entre o ajuizamento e o julgamento no tribunal. As variáveis
 categóricas são o tribunal, a classe processual harmonizada, o assunto
 (ausente no TJBA), a matéria (cível ou criminal), o órgão julgador, a comarca e
 o modelo de ementa (tradicional ou CNJ, identificado pela expressão ``caso em
@@ -197,8 +198,8 @@ desvio~\cite{cohen}. A carga, que repete o mesmo valor em todas as decisões de
 um relator, foi testada por relator. Os testes foram feitos na escala original
 e em $\log(1+x)$ e complementados por gráficos Q-Q. O coeficiente de
 correlação seguiu o resultado desse teste: Pearson ($r$)~\cite{pearson} quando
-a normalidade não é rejeitada e Spearman ($\rho$)~\cite{spearman} nos demais
-casos; as tabelas trazem os dois para comparação. A associação com variáveis
+a normalidade das duas variáveis não é rejeitada e Spearman
+($\rho$)~\cite{spearman} nos demais casos. A associação com variáveis
 categóricas foi medida pelo qui-quadrado e pelo $V$ de Cramér~\cite{cramer}, em
 categorias com ao menos 30 casos. Adotou-se $\alpha = 0{,}05$; com dezenas de
 milhares de observações, a interpretação se baseia na magnitude: abaixo de 0,1
@@ -218,12 +219,12 @@ o script principal refaz a extração e todos os resultados a partir do
 
 O número do processo tem 20 dígitos em todas as decisões e é válido para o
 tribunal em mais de 99,99\%. A origem derivada dele é coerente com as classes:
-99,2\% dos agravos de instrumento e 99,4\% dos \emph{habeas corpus} são
-originários do tribunal, e 99,9\% das apelações vêm do primeiro grau. O
+99,2\% dos agravos de instrumento e 99,4\% dos \emph{habeas corpus} foram
+autuados no tribunal, e 99,9\% das apelações vêm do primeiro grau. O
 rótulo de resultado ficou sem identificação em 2,4\% das decisões do TJSP e em
-0,6\% a 0,7\% nos demais. A cauda ``ACORDAM'' fornece 93,7\% dos rótulos no
-TJBA e 77,0\% no TJPA; a seção ``Dispositivo'', 83,0\% no TJES; e o trecho final,
-75,6\% no TJSP. Os julgamentos de mérito somam 153.559 decisões (82,3\% da
+0,6\% a 0,7\% nos demais; a maioria dos rótulos vem da cauda ``ACORDAM'' no
+TJBA (94\%) e no TJPA (77\%), do ``Dispositivo'' no TJES (83\%) e do trecho
+final no TJSP (76\%). Os julgamentos de mérito somam 153.559 decisões (82,3\% da
 base); o restante são embargos de declaração (de 4,2\% no TJES a 17,4\% no
 TJBA), recursos não conhecidos ou prejudicados e outras ações originárias.
 Apelações cíveis são 47\% a 60\% das decisões, e a matéria criminal pesa mais no
@@ -245,11 +246,12 @@ tribunal e resultado é desprezível ($V = 0{,}049$, Tabela~\ref{tab:associacao}
 A classe processual importa mais ($V = 0{,}179$). Apelações e agravos de
 instrumento têm taxas de 36\% a 40\% em três tribunais e cerca de 10 pontos
 menos no TJPA nas classes cíveis. Entre as ações originárias, o \emph{habeas
-corpus} é a classe de menor êxito em todos os tribunais, com a ordem concedida
-em 7,6\% (TJSP) a 16,8\% (TJPA) dos casos, enquanto o mandado de segurança
-chega a 61,6\% no TJBA, contra 14\% a 35\% nos demais (Fig.~\ref{fig:classe}). Por
-isso a matéria criminal tem taxa menor que a cível em três tribunais (28\% a
-30\% contra 37\% a 39\%). Dentro de cada tribunal, a taxa varia muito entre
+corpus} tem êxito baixo, com a ordem concedida em 7,6\% (TJSP) a 16,8\% (TJPA)
+dos casos, o que reduz a taxa da matéria criminal em três tribunais (28\% a
+30\% contra 37\% a 39\% na cível); o mandado de segurança chega a 61,6\% no
+TJBA, contra 14\% a 35\% nos demais (Fig.~\ref{fig:classe}). A menor taxa é a
+do agravo interno, menos frequente e fora da figura: 4,2\% no TJSP e 1,0\% no
+TJPA. Dentro de cada tribunal, a taxa varia muito entre
 órgãos: no TJSP, de 0\% (Câmara Especial de Presidentes) a 62,8\%
 (35\textsuperscript{a} Câmara de Direito Privado); no TJBA, de 4,9\% (Órgão
 Especial) a 65,8\% (Seção Cível de Direito Público). Ainda assim, a maior
@@ -303,9 +305,11 @@ Carga (dec./ano)  & TJSP  & 21.826  & 102,05   & 73    & 53    & 82,37  & 106 & 
 \textit{Tempo de tramitação.} A mediana é de dois anos, de um ano no TJSP a
 três no TJPA, e a cauda é longa: o percentil 90 vai de 5 anos (TJSP) a 11 (TJPA
 e TJBA), com máximos de 34 a 45 anos, assimetria positiva e coeficiente de
-variação acima de 95\% em todos os tribunais. A origem separa dois regimes: nas
-ações originárias, a mediana é zero (um ano no TJPA) e de 48\% (TJPA) a 73\%
-(TJSP) dos processos são julgados no ano em que chegam; nos processos vindos
+variação acima de 95\% em todos os tribunais. A origem separa dois regimes: nos
+processos autuados no tribunal (61\% agravos de instrumento e 24\%
+\emph{habeas corpus} ou mandados de segurança), a mediana é zero (um ano no
+TJPA) e de 48\% (TJPA) a 73\% (TJSP) são julgados no ano da autuação; nos
+processos vindos
 do primeiro grau, a mediana é de 2 anos no TJSP, 4 no TJES e no TJBA e 5 no
 TJPA, com percentil 90 de 7 a 13 anos. A Seção~\ref{sec:tempo} examina esse
 segundo grupo.
@@ -334,8 +338,8 @@ cada tribunal.
 
 \subsection{Tramitação longa: assunto e comarca}\label{sec:tempo}
 
-Entre os 105.184 processos vindos do primeiro grau, 41,9\% chegaram ao tribunal
-cinco anos ou mais depois do ajuizamento: 16,4\% no TJSP, 42,5\% no TJES, 45,3\% no
+Entre os 105.184 processos vindos do primeiro grau, 41,9\% foram julgados no
+tribunal cinco anos ou mais depois do ajuizamento: 16,4\% no TJSP, 42,5\% no TJES, 45,3\% no
 TJBA e 50,4\% no TJPA, sempre mais na matéria cível que na criminal (47,2\%
 contra 30,4\% no TJES). Ao contrário do resultado, essa variável é estruturada
 pelas categorias disponíveis (Tabela~\ref{tab:associacao}). O assunto tem
@@ -427,13 +431,14 @@ $\log(1+x)$.}
 Como a normalidade é rejeitada por decisão, o coeficiente de referência é o de
 Spearman; o de Pearson, calculado para comparação, tem o mesmo sinal e
 magnitude semelhante (Tabela~\ref{tab:corrdecisao}). Nenhuma variável
-quantitativa se correlaciona de forma relevante com o êxito: os coeficientes
-ficam entre $-0{,}04$ e $0{,}10$ em todos os tribunais. A única associação que
-escapa da faixa desprezível, entre carga e tamanho da ementa, ilustra o
-paradoxo de Simpson: dentro do TJSP, do TJES e do TJBA ela é negativa
-($\rho$ de $-0{,}17$ a $-0{,}19$), isto é, relatores com mais decisões escrevem
-ementas menores, mas no conjunto é positiva ($\rho = 0{,}076$), porque o tribunal
-com menor carga registrada (TJSP) também tem as ementas mais curtas.
+quantitativa se correlaciona de forma relevante com o êxito ($\rho$ de
+$-0{,}04$ a $0{,}10$). Os pares com a carga exigem cuidado, pois ela reflete a
+cobertura da base e não é comparável entre tribunais: tramitação e carga têm
+$\rho = 0{,}115$ no conjunto, mas de $-0{,}08$ a $0{,}07$ em cada tribunal,
+porque o TJSP tem a menor carga e os processos mais recentes; e carga e ementa
+mostram um paradoxo de Simpson, com $\rho$ de $-0{,}17$ a $-0{,}19$ no TJSP, no
+TJES e no TJBA (relatores com mais decisões escrevem ementas menores) e
+$0{,}076$ no conjunto, porque o TJSP também tem as ementas mais curtas.
 
 \begin{table}[!t]
 \caption{Correlações por decisão (Spearman $\rho$; Pearson $r$ no conjunto)}
@@ -457,16 +462,18 @@ Carga $\times$ Ementa      & 0,045 & 0,076 & $-$0,192 & $-$0,194 & 0,076 & $-$0,
 \end{tabular}
 \end{table}
 
-Por relator (Tabela~\ref{tab:corrrelator}), a carga também não acompanha a taxa
-de êxito: $\rho = -0{,}07$ no conjunto e correlação nula em três tribunais; onde
-a taxa é aproximadamente normal (TJSP, TJES e TJPA), o coeficiente de Pearson
-confirma a leitura ($r$ de $-0{,}13$ a $0{,}24$, nenhum com $p < 0{,}05$). O que
-acompanha a taxa é a composição da pauta: a proporção de matéria criminal do
-relator tem correlação moderada e negativa com a taxa no TJES ($\rho = -0{,}50$)
-e no TJBA ($-0{,}54$), coerente com o baixo êxito dos \emph{habeas corpus}. A
-proporção de ementas no modelo do CNJ é o que mais se correlaciona com o
-tamanho da ementa ($\rho = 0{,}76$), mas tem associação fraca ou nula com a taxa
-de êxito.
+Por relator (Tabela~\ref{tab:corrrelator}), usa-se só o Spearman, pois a carga
+não é normal em nenhum tribunal. A carga não acompanha a taxa de êxito, exceto
+no TJBA ($\rho = 0{,}32$). A tramitação, desprezível por decisão, tem
+$\rho = 0{,}47$ com a taxa do relator no TJES e $0{,}42$ no TJBA, onde a ementa
+tem $-0{,}42$. É efeito da composição da pauta: relatores criminais julgam mais
+\emph{habeas corpus}, de tempo quase nulo e êxito baixo, e a proporção criminal
+tem $\rho = -0{,}50$ e $-0{,}54$ com a taxa nesses tribunais. Entre relatores de
+pauta cível (menos de 10\% criminal), essas quatro correlações somem
+($|\rho| \le 0{,}20$, todas com $p > 0{,}05$): associação entre relatores não
+implica associação entre decisões. A proporção de ementas no modelo do CNJ é o
+que mais se correlaciona com o tamanho da ementa ($\rho = 0{,}76$); no
+conjunto, carga e ementa ($\rho = 0{,}53$) repetem o artefato de cobertura.
 
 \begin{table}[!t]
 \caption{Correlações por relator (Spearman $\rho$)}
@@ -484,6 +491,7 @@ Carga $\times$ Ementa                & 0,53 & $-$0,19 & $-$0,06\textsuperscript{
 \% CNJ $\times$ Ementa               & 0,76 & 0,64 & 0,79 & 0,25\textsuperscript{ns} & 0,45 \\
 \% CNJ $\times$ Taxa de êxito        & $-$0,20 & $-$0,19 & 0,03\textsuperscript{ns} & $-$0,02\textsuperscript{ns} & $-$0,06\textsuperscript{ns} \\
 Tramitação $\times$ Taxa de êxito    & 0,00\textsuperscript{ns} & 0,05\textsuperscript{ns} & 0,47 & $-$0,16\textsuperscript{ns} & 0,42 \\
+Ementa $\times$ Taxa de êxito        & $-$0,24 & $-$0,14 & $-$0,10\textsuperscript{ns} & 0,16\textsuperscript{ns} & $-$0,42 \\
 \% criminal $\times$ Taxa de êxito   & $-$0,27 & $-$0,24 & $-$0,50 & 0,21\textsuperscript{ns} & $-$0,54 \\
 \hline
 \multicolumn{6}{l}{\scriptsize Carga: decisões no ano; ementa e tramitação: medianas do relator.}\\
@@ -527,15 +535,17 @@ falho, e a coleta do TJBA se concentra de maio a dezembro. As taxas e os tempos
 descrevem, portanto, as decisões presentes na base, e não necessariamente o
 tribunal inteiro. A base também cobre só decisões colegiadas; segundo o próprio
 TJSP, cerca de 9\% de suas decisões de segundo grau em 2024 foram
-monocráticas~\cite{tjsp2024}, e as conclusões não se estendem a elas. Por fim,
-quatro tribunais estaduais em um único ano não representam a Justiça brasileira
-como um todo.
+monocráticas~\cite{tjsp2024}, e as conclusões não se estendem a elas. A
+proporção de processos longos descreve os recursos julgados em 2025 e só vale
+para os processos ajuizados se o fluxo for estável, o que metas do CNJ de
+julgar processos antigos podem quebrar. Por fim, quatro tribunais
+estaduais em um único ano não representam a Justiça brasileira como um todo.
 
 \emph{Validade de construto.} O resultado foi extraído por expressões
 regulares, sem anotação manual: a cobertura é alta, mas a precisão não foi
-medida. O tempo é medido em anos inteiros, com erro de até um ano, e inclui a
-fase de primeiro grau nos recursos, mas só a fase no tribunal nas ações
-originárias. A classe harmonizada entre tribunais é aproximada, a comarca é
+medida. O tempo, em anos inteiros (erro de até um ano), vai até o julgamento,
+pois a data de chegada ao tribunal não está na base, e nos processos autuados
+no tribunal mede só a fase no tribunal. A classe harmonizada entre tribunais é aproximada, a comarca é
 identificada só por um código, e o assunto não existe no TJBA.
 
 \emph{Validade interna e de conclusão.} No TJBA, 34,6\% das decisões
@@ -543,10 +553,9 @@ compartilham processo e data com outra decisão, tipicamente o acórdão princip
 e o dos embargos de declaração; como esses julgamentos não ocorrem no mesmo dia,
 a data registrada parece ser a do último ato do processo, o que pode deslocar
 alguns julgamentos para 2025. Contar o tempo por processo reduz esse efeito. Com
-dezenas de milhares de observações, qualquer teste rejeita desvios pequenos;
-por isso a interpretação se apoiou no tamanho do efeito ($D$, $w$, $\rho$ e
-$V$) e nos gráficos. As associações por relator e por comarca refletem a composição da
-pauta e não foram ajustadas para ela, e nenhuma delas indica causalidade.
+tantas observações, qualquer teste rejeita desvios pequenos, daí a leitura pelo
+tamanho do efeito. A composição da pauta só foi controlada pela separação dos
+relatores cíveis, e nenhuma associação indica causalidade.
 
 \section{Conclusão}\label{sec:conclusao}
 \balance
@@ -554,24 +563,31 @@ pauta e não foram ajustadas para ela, e nenhuma delas indica causalidade.
 A análise de 186.644 acórdãos de quatro tribunais de justiça julgados em 2025
 produziu quatro resultados. Primeiro, cerca de um terço dos julgamentos de
 mérito dá êxito a quem recorre ou impetra, proporção que varia pouco entre
-tribunais (30\% a 38\%) e muito entre classes (de 8\% em \emph{habeas corpus} a
-40\% em apelações) e entre órgãos do mesmo tribunal (0\% a 66\%). Segundo,
+tribunais (30\% a 38\%) e muito entre classes (de 1\% a 4\% no agravo interno
+e 8\% a 17\% no \emph{habeas corpus} a 62\% no mandado de segurança do TJBA) e
+entre órgãos de um mesmo tribunal (de 0\% a 63\% no TJSP e de 5\% a 66\% no
+TJBA). Segundo,
 nenhuma variável quantitativa é normal por decisão, e o logaritmo não resolve
 o excesso de zeros nem a bimodalidade; nas agregações por relator e por comarca,
-algumas variáveis se aproximam da normal. Terceiro, tempo, tamanho da ementa e
-carga têm correlação desprezível com o resultado, e a relação entre carga e
-ementa inverte de sinal entre o agregado e os tribunais. Quarto, o tempo de
-tramitação é o oposto do resultado: 42\% dos processos de primeiro grau chegam
-ao tribunal com cinco anos ou mais, e o assunto ($V = 0{,}43$) e a comarca
-($V = 0{,}32$) estruturam fortemente essa demora.
+algumas variáveis se aproximam da normal. Terceiro, por decisão, tempo,
+tamanho da ementa e carga têm correlação desprezível com o resultado; as
+correlações que surgem por relator refletem a composição da pauta e somem
+entre relatores cíveis, e a relação entre carga e ementa inverte de sinal
+entre o agregado e os tribunais. Quarto, o tempo de
+tramitação é o oposto do resultado: 42\% dos processos de primeiro grau são
+julgados no tribunal cinco anos ou mais após o ajuizamento, e o assunto
+($V = 0{,}43$) e a comarca ($V = 0{,}32$) têm associação moderada com essa
+demora.
 
-Para a etapa de aprendizado de máquina, a Tabela~\ref{tab:associacao} decide o
-alvo: prever o resultado com variáveis estruturadas teria teto baixo, porque o
-que decide um recurso está nos autos; prever a tramitação longa a partir de
-tribunal, classe, assunto, matéria, comarca e órgão, todos conhecidos antes do
-julgamento, é um problema de classificação com sinal real e alvo equilibrado,
-alinhado às metas do CNJ para processos antigos. O modelo será desenvolvido em
-R, no mesmo repositório.
+Para a etapa de aprendizado de máquina, a Tabela~\ref{tab:associacao} orienta
+o alvo: o resultado, com variáveis estruturadas, teria teto baixo, porque o que
+decide um recurso está nos autos; a tramitação longa tem sinal real e classes
+equilibradas. Como os julgamentos são de 2025, ser longo equivale a ter sido
+ajuizado até 2020, o que o número do processo já mostra no tribunal. Por
+isso, a previsão será feita no ajuizamento, com tribunal, comarca, assunto,
+matéria e tipo de recurso, sem órgão julgador e relator, definidos anos depois.
+Para testar a hipótese de fluxo estável, o modelo, em R, será treinado com os
+julgados de 2025 e testado com os de 2026.
 
 \begin{thebibliography}{00}
 \bibitem{repojus} A. C. R. Badini, ``RepoJus,'' Hugging Face, 2026, \textit{dataset}, snapshot v2, commit 5791ee7. [Online]. Disponível: https://huggingface.co/\allowbreak datasets/\allowbreak andrebadini/\allowbreak repojus

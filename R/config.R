@@ -13,6 +13,7 @@ CONFIG <- list(
   min_relator    = 30L,        # mínimo de julgamentos de mérito por relator
   min_categoria  = 30L,        # mínimo de casos por órgão, comarca ou assunto
   anos_longa     = 5L,         # tramitação longa: 5 anos ou mais
+  max_criminal_civel = 10,     # relator de pauta cível: menos de 10% de matéria criminal
   local_dir      = Sys.getenv("REPOJUS_LOCAL_DIR", ""),
   dir_dados      = Sys.getenv("AP1_DIR_DADOS", "dados"),
   dir_resultados = Sys.getenv("AP1_DIR_RESULTADOS", "resultados"),

@@ -286,7 +286,7 @@
       "TJPA": 100,
       "TJBA": 99.991398
     },
-    "pct_originario": {
+    "pct_autuado_tribunal": {
       "TJSP": 32.468842,
       "TJES": 33.112354,
       "TJPA": 22.835289,
@@ -294,57 +294,57 @@
     },
     "origem_por_classe": [
       {
-        "Originário do tribunal": 53.513299,
+        "Autuado no tribunal": 53.513299,
         "Primeiro grau": 46.486701,
         "_row": "Agravo de execução penal"
       },
       {
-        "Originário do tribunal": 99.215162,
+        "Autuado no tribunal": 99.215162,
         "Primeiro grau": 0.784838,
         "_row": "Agravo de instrumento"
       },
       {
-        "Originário do tribunal": 43.715847,
+        "Autuado no tribunal": 43.715847,
         "Primeiro grau": 56.284153,
         "_row": "Agravo interno"
       },
       {
-        "Originário do tribunal": 0.065704,
+        "Autuado no tribunal": 0.065704,
         "Primeiro grau": 99.934296,
         "_row": "Apelação cível"
       },
       {
-        "Originário do tribunal": 0.060396,
+        "Autuado no tribunal": 0.060396,
         "Primeiro grau": 99.939604,
         "_row": "Apelação criminal"
       },
       {
-        "Originário do tribunal": 28.501321,
+        "Autuado no tribunal": 28.501321,
         "Primeiro grau": 71.498679,
         "_row": "Embargos de declaração"
       },
       {
-        "Originário do tribunal": 99.428105,
+        "Autuado no tribunal": 99.428105,
         "Primeiro grau": 0.571895,
         "_row": "Habeas corpus"
       },
       {
-        "Originário do tribunal": 97.196636,
+        "Autuado no tribunal": 97.196636,
         "Primeiro grau": 2.803364,
         "_row": "Mandado de segurança"
       },
       {
-        "Originário do tribunal": 94.545743,
+        "Autuado no tribunal": 94.545743,
         "Primeiro grau": 5.454257,
         "_row": "Outras"
       },
       {
-        "Originário do tribunal": 1.861702,
+        "Autuado no tribunal": 1.861702,
         "Primeiro grau": 98.138298,
         "_row": "Recurso em sentido estrito"
       },
       {
-        "Originário do tribunal": 0.309789,
+        "Autuado no tribunal": 0.309789,
         "Primeiro grau": 99.690211,
         "_row": "Remessa necessária"
       }
@@ -795,7 +795,7 @@
   "tempo_por_origem": [
     {
       "tribunal": "TJSP",
-      "origem": "Originário do tribunal",
+      "origem": "Autuado no tribunal",
       "n": 7008,
       "mediana": 0,
       "q1": 0,
@@ -815,7 +815,7 @@
     },
     {
       "tribunal": "TJES",
-      "origem": "Originário do tribunal",
+      "origem": "Autuado no tribunal",
       "n": 11776,
       "mediana": 0,
       "q1": 0,
@@ -835,7 +835,7 @@
     },
     {
       "tribunal": "TJPA",
-      "origem": "Originário do tribunal",
+      "origem": "Autuado no tribunal",
       "n": 7420,
       "mediana": 1,
       "q1": 0,
@@ -855,7 +855,7 @@
     },
     {
       "tribunal": "TJBA",
-      "origem": "Originário do tribunal",
+      "origem": "Autuado no tribunal",
       "n": 21780,
       "mediana": 0,
       "q1": 0,
@@ -874,6 +874,79 @@
       "pct_zero": 3.864016
     }
   ],
+  "classes_autuado_tribunal": {
+    "total": {
+      "Agravo de execução penal": 2.750917,
+      "Agravo de instrumento": 60.936979,
+      "Agravo interno": 0.627292,
+      "Apelação cível": 0.127126,
+      "Apelação criminal": 0.025008,
+      "Embargos de declaração": 1.45882,
+      "Habeas corpus": 16.795182,
+      "Mandado de segurança": 7.098199,
+      "Outras": 10.063771,
+      "Recurso em sentido estrito": 0.106285,
+      "Remessa necessária": 0.01042
+    },
+    "por_tribunal": [
+      {
+        "Agravo de execução penal": 0,
+        "Agravo de instrumento": 67.565639,
+        "Agravo interno": 4.066781,
+        "Apelação cível": 0.256849,
+        "Apelação criminal": 0,
+        "Embargos de declaração": 9.86016,
+        "Habeas corpus": 9.275114,
+        "Mandado de segurança": 0.984589,
+        "Outras": 7.990868,
+        "Recurso em sentido estrito": 0,
+        "Remessa necessária": 0,
+        "_row": "TJSP"
+      },
+      {
+        "Agravo de execução penal": 8.423913,
+        "Agravo de instrumento": 58.780571,
+        "Agravo interno": 0,
+        "Apelação cível": 0.025476,
+        "Apelação criminal": 0.008492,
+        "Embargos de declaração": 0,
+        "Habeas corpus": 23.395041,
+        "Mandado de segurança": 1.137908,
+        "Outras": 8.058764,
+        "Recurso em sentido estrito": 0.161345,
+        "Remessa necessária": 0.008492,
+        "_row": "TJES"
+      },
+      {
+        "Agravo de execução penal": 4.380054,
+        "Agravo de instrumento": 52.924528,
+        "Agravo interno": 0.215633,
+        "Apelação cível": 0.525606,
+        "Apelação criminal": 0.134771,
+        "Embargos de declaração": 0.121294,
+        "Habeas corpus": 25.6469,
+        "Mandado de segurança": 3.679245,
+        "Outras": 12.075472,
+        "Recurso em sentido estrito": 0.242588,
+        "Remessa necessária": 0.053908,
+        "_row": "TJPA"
+      },
+      {
+        "Agravo de execução penal": 0.013774,
+        "Agravo de instrumento": 62.699725,
+        "Agravo interno": 0,
+        "Apelação cível": 0.004591,
+        "Apelação criminal": 0.004591,
+        "Embargos de declaração": 0,
+        "Habeas corpus": 12.630854,
+        "Mandado de segurança": 13.452709,
+        "Outras": 11.129477,
+        "Recurso em sentido estrito": 0.064279,
+        "Remessa necessária": 0,
+        "_row": "TJBA"
+      }
+    ]
+  },
   "tempo_p90": {
     "Total": 10,
     "TJSP": 5,
@@ -1349,25 +1422,25 @@
   ],
   "taxa_por_origem": [
     {
-      "categoria": "Originário do tribunal",
+      "categoria": "Autuado no tribunal",
       "tribunal": "TJSP",
       "n": 5136,
       "taxa": 34.59891
     },
     {
-      "categoria": "Originário do tribunal",
+      "categoria": "Autuado no tribunal",
       "tribunal": "TJES",
       "n": 10760,
       "taxa": 31.152416
     },
     {
-      "categoria": "Originário do tribunal",
+      "categoria": "Autuado no tribunal",
       "tribunal": "TJPA",
       "n": 6251,
       "taxa": 24.476084
     },
     {
-      "categoria": "Originário do tribunal",
+      "categoria": "Autuado no tribunal",
       "tribunal": "TJBA",
       "n": 21657,
       "taxa": 39.516092
@@ -2529,6 +2602,284 @@
       "p_rho": 1.734212e-07
     }
   ],
+  "correlacao_relator_civel": [
+    {
+      "grupo": "Total",
+      "par": "Carga × Taxa de êxito",
+      "n": 274,
+      "pearson_r": -0.040881,
+      "p_r": 0.50038,
+      "spearman_rho": -0.092731,
+      "p_rho": 0.125708
+    },
+    {
+      "grupo": "Total",
+      "par": "Carga × Ementa (mediana)",
+      "n": 274,
+      "pearson_r": 0.57446,
+      "p_r": 1.852073e-25,
+      "spearman_rho": 0.488337,
+      "p_rho": 7.939564e-18
+    },
+    {
+      "grupo": "Total",
+      "par": "% modelo CNJ × Ementa (mediana)",
+      "n": 274,
+      "pearson_r": 0.837073,
+      "p_r": 3.258129e-73,
+      "spearman_rho": 0.802086,
+      "p_rho": 7.679995e-63
+    },
+    {
+      "grupo": "Total",
+      "par": "% modelo CNJ × Taxa de êxito",
+      "n": 274,
+      "pearson_r": -0.204679,
+      "p_r": 0.000653,
+      "spearman_rho": -0.211585,
+      "p_rho": 0.000421
+    },
+    {
+      "grupo": "Total",
+      "par": "Tramitação (mediana) × Taxa de êxito",
+      "n": 274,
+      "pearson_r": 0.014833,
+      "p_r": 0.806909,
+      "spearman_rho": -0.108779,
+      "p_rho": 0.072221
+    },
+    {
+      "grupo": "Total",
+      "par": "Ementa (mediana) × Taxa de êxito",
+      "n": 274,
+      "pearson_r": -0.164511,
+      "p_r": 0.006347,
+      "spearman_rho": -0.202797,
+      "p_rho": 0.000734
+    },
+    {
+      "grupo": "TJSP",
+      "par": "Carga × Taxa de êxito",
+      "n": 167,
+      "pearson_r": -0.202205,
+      "p_r": 0.008778,
+      "spearman_rho": -0.028313,
+      "p_rho": 0.71645
+    },
+    {
+      "grupo": "TJSP",
+      "par": "Carga × Ementa (mediana)",
+      "n": 167,
+      "pearson_r": -0.199262,
+      "p_r": 0.009833,
+      "spearman_rho": -0.187228,
+      "p_rho": 0.015401
+    },
+    {
+      "grupo": "TJSP",
+      "par": "% modelo CNJ × Ementa (mediana)",
+      "n": 167,
+      "pearson_r": 0.721677,
+      "p_r": 3.74201e-28,
+      "spearman_rho": 0.591277,
+      "p_rho": 4.008067e-17
+    },
+    {
+      "grupo": "TJSP",
+      "par": "% modelo CNJ × Taxa de êxito",
+      "n": 167,
+      "pearson_r": -0.141756,
+      "p_r": 0.067644,
+      "spearman_rho": -0.201643,
+      "p_rho": 0.008972
+    },
+    {
+      "grupo": "TJSP",
+      "par": "Tramitação (mediana) × Taxa de êxito",
+      "n": 167,
+      "pearson_r": 0.215537,
+      "p_r": 0.005152,
+      "spearman_rho": -0.017604,
+      "p_rho": 0.821353
+    },
+    {
+      "grupo": "TJSP",
+      "par": "Ementa (mediana) × Taxa de êxito",
+      "n": 167,
+      "pearson_r": -0.149966,
+      "p_r": 0.053066,
+      "spearman_rho": -0.171001,
+      "p_rho": 0.027139
+    },
+    {
+      "grupo": "TJES",
+      "par": "Carga × Taxa de êxito",
+      "n": 26,
+      "pearson_r": 0.140248,
+      "p_r": 0.494388,
+      "spearman_rho": 0.12515,
+      "p_rho": 0.542419
+    },
+    {
+      "grupo": "TJES",
+      "par": "Carga × Ementa (mediana)",
+      "n": 26,
+      "pearson_r": -0.182627,
+      "p_r": 0.371876,
+      "spearman_rho": -0.229099,
+      "p_rho": 0.260258
+    },
+    {
+      "grupo": "TJES",
+      "par": "% modelo CNJ × Ementa (mediana)",
+      "n": 26,
+      "pearson_r": 0.80938,
+      "p_r": 5.53505e-07,
+      "spearman_rho": 0.7831,
+      "p_rho": 2.252788e-06
+    },
+    {
+      "grupo": "TJES",
+      "par": "% modelo CNJ × Taxa de êxito",
+      "n": 26,
+      "pearson_r": -0.155796,
+      "p_r": 0.447256,
+      "spearman_rho": -0.150188,
+      "p_rho": 0.463974
+    },
+    {
+      "grupo": "TJES",
+      "par": "Tramitação (mediana) × Taxa de êxito",
+      "n": 26,
+      "pearson_r": 0.175125,
+      "p_r": 0.39217,
+      "spearman_rho": 0.115486,
+      "p_rho": 0.57426
+    },
+    {
+      "grupo": "TJES",
+      "par": "Ementa (mediana) × Taxa de êxito",
+      "n": 26,
+      "pearson_r": -0.097696,
+      "p_r": 0.634935,
+      "spearman_rho": -0.178803,
+      "p_rho": 0.382142
+    },
+    {
+      "grupo": "TJPA",
+      "par": "Carga × Taxa de êxito",
+      "n": 23,
+      "pearson_r": 0.154394,
+      "p_r": 0.481813,
+      "spearman_rho": 0.072134,
+      "p_rho": 0.743608
+    },
+    {
+      "grupo": "TJPA",
+      "par": "Carga × Ementa (mediana)",
+      "n": 23,
+      "pearson_r": 0.187749,
+      "p_r": 0.390967,
+      "spearman_rho": 0.258957,
+      "p_rho": 0.232813
+    },
+    {
+      "grupo": "TJPA",
+      "par": "% modelo CNJ × Ementa (mediana)",
+      "n": 23,
+      "pearson_r": 0.497082,
+      "p_r": 0.015816,
+      "spearman_rho": 0.389315,
+      "p_rho": 0.066331
+    },
+    {
+      "grupo": "TJPA",
+      "par": "% modelo CNJ × Taxa de êxito",
+      "n": 23,
+      "pearson_r": -0.039655,
+      "p_r": 0.857431,
+      "spearman_rho": 0.245302,
+      "p_rho": 0.25925
+    },
+    {
+      "grupo": "TJPA",
+      "par": "Tramitação (mediana) × Taxa de êxito",
+      "n": 23,
+      "pearson_r": -0.228336,
+      "p_r": 0.294676,
+      "spearman_rho": -0.222571,
+      "p_rho": 0.307366
+    },
+    {
+      "grupo": "TJPA",
+      "par": "Ementa (mediana) × Taxa de êxito",
+      "n": 23,
+      "pearson_r": 0.108979,
+      "p_r": 0.620615,
+      "spearman_rho": 0.050902,
+      "p_rho": 0.817585
+    },
+    {
+      "grupo": "TJBA",
+      "par": "Carga × Taxa de êxito",
+      "n": 58,
+      "pearson_r": -0.054178,
+      "p_r": 0.686268,
+      "spearman_rho": -0.052203,
+      "p_rho": 0.697148
+    },
+    {
+      "grupo": "TJBA",
+      "par": "Carga × Ementa (mediana)",
+      "n": 58,
+      "pearson_r": 0.131847,
+      "p_r": 0.323852,
+      "spearman_rho": 0.090843,
+      "p_rho": 0.497654
+    },
+    {
+      "grupo": "TJBA",
+      "par": "% modelo CNJ × Ementa (mediana)",
+      "n": 58,
+      "pearson_r": 0.795492,
+      "p_r": 8.67078e-14,
+      "spearman_rho": 0.726263,
+      "p_rho": 1.103226e-10
+    },
+    {
+      "grupo": "TJBA",
+      "par": "% modelo CNJ × Taxa de êxito",
+      "n": 58,
+      "pearson_r": -0.257241,
+      "p_r": 0.051249,
+      "spearman_rho": -0.253007,
+      "p_rho": 0.055339
+    },
+    {
+      "grupo": "TJBA",
+      "par": "Tramitação (mediana) × Taxa de êxito",
+      "n": 58,
+      "pearson_r": 0.022958,
+      "p_r": 0.864178,
+      "spearman_rho": 0.073125,
+      "p_rho": 0.585402
+    },
+    {
+      "grupo": "TJBA",
+      "par": "Ementa (mediana) × Taxa de êxito",
+      "n": 58,
+      "pearson_r": -0.188483,
+      "p_r": 0.156503,
+      "spearman_rho": -0.2014,
+      "p_rho": 0.129518
+    }
+  ],
+  "relatores_civeis": {
+    "TJSP": 167,
+    "TJES": 26,
+    "TJPA": 23,
+    "TJBA": 58
+  },
   "orgaos": {
     "TJSP": {
       "n_orgaos": 85,
